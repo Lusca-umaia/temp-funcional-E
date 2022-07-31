@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar" >
+            <div class="logo">
+                <a href="/"><img src="/img/logo.svg" alt="" ></a>
+            </div>
+            <div class="menu-hamburguer" id="btn-hamburguer">
+                <div class="linha linha1"></div>
+                <div class="linha linha2"></div>
+                <div class="linha linha3"></div>
+            </div>
+            <div class="menu">
+                <ul class="container-menu">
+                    <li class="list-menu">
+                        <a href="#" class="item-menu">projetos</a>
+                    </li>
+                    <li class="list-menu">
+                        <a href="#" class="item-menu">podcast</a>
+                    </li>
+                    <li class="list-menu">
+                        <a href="#" class="item-menu">contato</a>
+                    </li>
+                    <li class="list-menu">
+                        <a href="#" class="item-menu">sobre</a>
+                    </li>
+                    <li class="list-menu">
+                        <a href="/index.html" class="item-menu">Inicio</a>
+                    </li>                     
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <img src="/img/vetor cadastro-login.svg" alt="" style="width: 50%;">
+            <div class="container-main-login">
+                <h2>Login</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Matrícula</legend>
+                        <div class="input-box">              
+                           <input type="number" name="matricula" id="matricula" name="matricula" placeholder="Matrícula" required>                           
+                       </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Senha</legend>
+                        <div class="input-box">                          
+                            <input type="password" name="senha" id="senha" name="senha" placeholder="Senha" required> 
+                        </div>
+                    </fieldset>
+                </form>
+                <button>Entrar</button>
+                <a href="cadastro/index.html">Não tem conta?<span style="color: rgb(16, 107, 107);"> Clique aqui</span></a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

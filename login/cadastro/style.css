@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Poppins&family=Reem+Kufi&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color:#FAFAFA;
+}
+
+header{
+   
+    border-bottom: 3px solid #000000;
+    display:flex;
+    flex-direction: column;
+    
+}
+#nav-bar{
+    height: 11.5vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+    background-color: #FAFAFA;
+    position: fixed;
+    z-index: 999;
+    padding: 0 104px 0 104px;
+}
+
+#nav-bar.active .menu{
+    display: block;
+    
+}
+.menu-hamburguer{
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    cursor: pointer;
+   
+}
+.menu-hamburguer .linha{
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.container-menu{
+    display: flex;
+    gap: 24px;
+    
+}
+.item-menu{
+    font-size: 23px;
+    font-family:'Reem Kufi', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.item-menu:hover{
+    color: #423d3d;
+}
+.container-main{
+    height: 97.5vh;
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-main-login{
+    background-color: #FFE49A;
+    width: 40%;
+    height: 72%;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 40px;
+
+}
+.container-main-login h2{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+   
+}
+form legend{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+}
+form fieldset{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 11px;
+}
+fieldset:hover{
+    background-color: #f8f8f8;
+}
+form .input-box input{
+    border: 0;
+    width: 100%;
+    outline: none;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: 400;
+    padding: 8px 5px;
+    background-color: transparent;
+    
+    
+}
+.container-main-login button{
+    width: 100%;
+    background: transparent;
+    border: 4px solid #ffffff;
+    border-radius: 11px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 12px 0;
+    cursor:pointer;
+}
+.container-main-login button:hover{
+    opacity: 0.8;
+}
+
+@media (max-width:500px){
+    #nav-bar{
+        height: 50px;
+        padding:0 21px 0 21px; 
+    }
+    nav.off .menu{
+        display: none;
+    }
+    nav.active .menu{
+        display: block; 
+        
+    }
+    nav.active .menu-hamburguer .linha2{
+        display: none;
+    }
+    nav.active .menu-hamburguer .linha1{
+        transform: rotate(140deg);
+        position: absolute;
+        top: 22px;
+    }
+    nav.active .menu-hamburguer .linha3{
+        transform: rotate(-140deg);
+       
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 80vw;   
+        background-color: #FAFAFA;
+        z-index: 9999;
+        animation: slide 0.5s ease-in-out;
+        opacity: 0.9;
+    }
+    @keyframes slide {
+        from{
+          
+           transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .menu .container-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        padding-top: 10px;
+        padding-bottom: 20px;  
+        width: 100%;
+        height: 100vh;
+        gap: 30px;
+       
+
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem;
+       
+    }
+    .menu .container-menu .login{
+        padding: 3px 60px;
+        background-color: #0C0C0C;
+        color: #ffff;
+        border-radius: 90px;
+    }
+    .nav-bar .logo{
+        padding-left:21px;
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+    .logo img{
+        height: 26px;
+    }
+    .container-main{
+        height: 97.5vh;
+        padding: 0 10% 0 10%;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .container-main-login{     
+        width: 100%;
+        border-radius: 28px;   
+        gap: 15px;
+        padding: 23px 30px;
+        justify-content: center;
+    }
+    .container-main img{
+        display: none;
+    }
+    .container-main-login h2{
+        font-size: 40px;
+    }
+    form{
+        gap: 14px;
+        width: 100%;
+       
+    }
+    form legend{
+        font-size: 18px;
+     
+    }
+    form fieldset{
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0 12px;
+        border-radius: 8px;
+    }
+    form .input-box input{
+
+        padding: 6px 5px;
+        
+        
+    }
+    .container-main-login button{
+        width: 100%;
+        background: transparent;
+        border: 4px solid #ffffff;
+        border-radius: 11px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 12px 0;
+        cursor:pointer;
+    }
+}
