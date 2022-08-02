@@ -116,8 +116,12 @@ header{
 .container-atualize-se .descricao .comecar:hover{
     background-color:#423d3d;
 }
+.container-img-vetor .img-vetor{
+    margin-top:9vh;
+    height: 60%;
+}
  main{
-    padding: 0 40px 0 40px;
+    padding: 0 5% 0 5%;
  }
 section{
     display: flex;
@@ -257,14 +261,190 @@ footer form .email{
     font-family: 'Montserrat', sans-serif; 
 }
 
-@media (max-width:500px){
+
+ /* media para telas menores de notebook */
+
+ @media (max-width:1300px){
     #nav-bar{
-        height: 50px;
-        padding:0 21px 0 21px; 
+        padding: 0 35px 0 50px;
     }
-    nav.off .menu{
-        display: none;
+    .container-menu{
+        display: flex;
+        gap: 24px;
+        
     }
+    .item-menu{
+        font-size: 23px;
+    }
+    .container-menu .login{
+        padding: 3px 60px;
+        border-radius: 90px;
+    }
+    .container-menu .login:hover{
+        background-color:#423d3d;
+    }
+    .container-atualize-se .descricao{
+        padding-left: 55px;
+    }
+    .container-atualize-se .descricao h2{
+        font-size:70px;
+    }
+    .container-atualize-se .descricao h3,p{
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+    .container-atualize-se .descricao .comecar{
+        font-size: 30px;
+        border-radius: 14px;
+        padding: 13px 60px;
+    }
+    .container-img-vetor .img-vetor{
+        height: 50%;
+    }
+    section{
+        border-radius:20px;
+        padding:10% 5%;  
+        margin-top: 10vh;
+        margin-bottom: 15vh;  
+    }
+    
+    section .titulos h3{
+        font-size:30px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+    }
+    section .titulos h2{
+        font-size:45px;
+        font-weight: 600;
+        font-family:'Montserrat', sans-serif ;
+        margin-bottom: 96px;
+    }
+    section .container-valores{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    section .container-valores .coluna-valores{
+        width: 318px;
+    }
+    section .container-valores .coluna-valores h3{
+        font-size:30px;
+        font-weight: 600;
+        font-family:'Montserrat', sans-serif ;
+        border-bottom: 3px solid #D9D9D9;
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 26px;
+    }
+    section .container-valores .coluna-valores .descricao-valores p{
+        font-size:20px;
+        font-weight: 500;
+        font-family:'Montserrat', sans-serif ;
+        line-height: 28.04px;
+    }
+    .container-opiniao{
+        display:flex;
+        background-color: #FFC017;
+        padding:27px 50px 0 50px;
+        height: 294px;
+        position: relative;
+        margin-bottom: 144px;
+    }
+    .container-opiniao .titulo-opiniao h3{
+        font-size:25px;
+    }
+    .container-opiniao .titulo-opiniao p{
+        font-size:20px;
+    }
+    .container-opiniao .img-vetor-opiniao img{
+        position: absolute;
+        z-index: 99;
+        bottom: 0;
+        right: -6vh;
+        height:350px;
+    }
+    .eventos h3{
+        font-size: 30px;
+        color:#000000;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 500;
+        margin-bottom: 26px;
+    }
+    .eventos .eventos-title{
+        border-bottom: 2px solid #E9E9E9;
+        margin-bottom: 32px;
+        color:#656565;
+    }
+    .eventos .semana-box{
+        display:flex;
+        justify-content: space-between;
+    }
+    .eventos .semana-box .semana-secion{
+        width: 45%;
+    }
+    .eventos .semana-box .semana-secion img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:35px 40px 35px 70px;
+    }
+    footer h2{
+        font-size:46px;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600;
+    }
+    footer .descricao-footer p{
+        font-size:25px;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+    }
+    footer img{
+        height: 150px;
+    }
+    footer form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer form .btn-enviar{
+        width:111px;
+        padding:10px 15px;
+        border: 0;
+        cursor: pointer;
+        border-radius:11px;
+        background-color: #ffff;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif; 
+    }
+    footer form .email{
+        border: 0;
+        outline: none;
+        padding:20px 40px ;
+
+    }
+}
+
+
+@media (max-width:1025px){
+    .container-img-vetor .img-vetor{
+        height: 60vh;
+    }
+}
+
+/* media para tablet */
+
+@media (max-width:850px){
+    #nav-bar{
+        height: 9vh;
+        padding:0 50px 0 50px; 
+    }
+
     nav.active .menu{
         display: block; 
         
@@ -275,7 +455,7 @@ footer form .email{
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
         position: absolute;
-        top: 22px;
+        
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);
@@ -284,7 +464,198 @@ footer form .email{
     .menu{
         display: none;
         position: absolute;
-        top: 50px;
+        top: 9vh;
+        right: 0;
+        width: 60vw;   
+        background-color: #ffc117ee;
+        z-index: 9999;
+        animation: slide 0.5s ease-in-out;
+    }
+    @keyframes slide {
+        from{
+          
+           transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .menu .container-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        padding-top: 10px;
+        padding-bottom: 20px;  
+        width: 100%;
+        height: 100vh;
+        gap: 35px;
+       
+
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem;
+       
+    }
+    .menu .container-menu .login{
+        padding: 3px 60px;
+        background-color: #0C0C0C;
+        color: #ffff;
+        border-radius: 90px;
+    }
+    .nav-bar .logo{
+        padding-left:21px;
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+    .logo img{
+        height: 26px;
+    }
+    .container-atualize-se{
+        display: block;
+        padding:10% 7% 10% 7%;      
+    }
+    .container-atualize-se .descricao{      
+       padding: 0;
+       margin-top: 10%;
+    }
+    .container-atualize-se .descricao h2{
+        font-size:55px;
+    }
+    .container-atualize-se .descricao h3{
+        display: block;
+        font-size: 28px;
+        margin-bottom: 3vh;
+    }
+    .container-atualize-se .descricao p{
+        display:block;
+        font-size:18px;
+        margin-bottom:5vh;
+               
+    }
+    .container-atualize-se .descricao .comecar{
+        font-size:20px;
+        padding: 14px 45px; 
+        border-radius: 12px;
+    }
+    .container-img-vetor{
+        display:none;
+    }
+    main{
+        padding: 0 10% 0 10%;
+        
+    }
+    section{
+        border-radius:20px;
+        padding:10% 5%;  
+        margin-top: 10vh;
+        margin-bottom: 15vh;  
+    }
+    
+    section .titulos h3{
+        font-size:25px;
+    }
+    section .titulos h2{
+        font-size:30px;
+        margin-bottom: 8vh;
+    }
+    section .container-valores{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vh;
+        
+    }
+    section .container-valores .coluna-valores{
+        width: 318px;
+    }
+    section .container-valores .coluna-valores h3{
+        font-size:22px;
+        font-weight: 600;       
+    }
+    section .container-valores .coluna-valores .descricao-valores p{
+        font-size:18px;
+    }
+    .container-opiniao{
+        display:none;
+    }
+    .eventos{
+        margin-top: 34px;
+    }
+    .eventos h3{
+        font-size: 22px;
+    }
+    .eventos .eventos-title{
+        font-size: 26px;
+    }
+       
+    .eventos .semana-box{
+        flex-direction: column;
+    }
+    .eventos .semana-box .semana-secion{
+        width: 100%;
+    }
+    footer{
+        padding: 5% 15%;
+    }
+    footer .descricao-footer h2{
+        font-size: 30px;
+    }
+    footer .descricao-footer p{
+        font-size: 20px;     
+    }
+    footer form .email{
+        padding:19px 20px ;
+        font-size: 15px;
+        border-radius:8px;
+    }
+    footer form{
+        gap: 20px;
+    }
+    footer form .btn-enviar{
+        width:100px;
+        padding:10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    footer img{
+        display: none;
+
+    }
+}
+
+ 
+
+
+/* media para celulares */
+
+@media (max-width:500px){
+    #nav-bar{
+        height: 9vh;
+        padding:0 21px 0 21px; 
+    }
+
+    nav.active .menu{
+        display: block; 
+        
+    }
+    nav.active .menu-hamburguer .linha2{
+        display: none;
+    }
+    nav.active .menu-hamburguer .linha1{
+        transform: rotate(140deg);
+        position: absolute;
+        top: 4.1vh;
+    }
+    nav.active .menu-hamburguer .linha3{
+        transform: rotate(-140deg);
+       
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 9vh;
         right: 0;
         width: 80vw;   
         background-color: #ffc117ee;
@@ -314,6 +685,7 @@ footer form .email{
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
+        font-size: 18px;
        
     }
     .menu .container-menu .login{
@@ -333,34 +705,38 @@ footer form .email{
     }
     .container-atualize-se{
         display: block;
+       padding:10% 7% 10% 7%;
+      
     }
-    .container-atualize-se .descricao{
-        padding: 50px 20px 50px 20px;
-        margin-top: 60px;
+    .container-atualize-se .descricao{      
+       padding: 0;
+       margin-top: 15%;
     }
     .container-atualize-se .descricao h2{
-        font-size:24px;
+        font-size:40px;
     }
     .container-atualize-se .descricao h3{
         display: none;
     }
     .container-atualize-se .descricao p{
         display:block;
-        font-size:10px;
-        margin-top:10px;
-        width: 80vw;
+        font-size:14px;
+        margin-top:2vh;
+        margin-bottom:4.5vh;
+               
     }
     .container-atualize-se .descricao .comecar{
-        font-size:9px;
-        padding: 8px 30px;
-        margin-top: 10px;
-        border-radius: 6px;
+        font-size:16px;
+        padding: 10px 40px;
+       
+        border-radius: 8px;
     }
     .container-img-vetor{
         display:none;
     }
     main{
-        padding: 0 69px 0 69px;
+        padding: 0 5% 0 5%;
+        
     }
     section{
         display: none;
@@ -386,34 +762,34 @@ footer form .email{
         width: 100%;
     }
     footer{
-        padding: 20px 69px 40px 69px;
+        padding: 5% 10%;
         margin-top: 100px;
-        
+       
     }
     footer .descricao-footer h2{
         font-size: 25px;
     }
     footer .descricao-footer p{
-        font-size: 12px;
-        margin-top:5px;
-        margin-bottom:5px;
+        font-size: 14px;
+       
     }
     footer form .email{
-        padding:10px 20px ;
+        padding:14px 20px ;
         font-size: 10px;
         border-radius:8px;
     }
     footer form{
-        gap: 10px;
+        gap: 15px;
     }
     footer form .btn-enviar{
-        width:60px;
-        padding:5px 10px;
-        font-size: 9px;
-        border-radius: 3px;
+        width:100px;
+        padding:8px 15px;
+        font-size: 14px;
+        border-radius: 5px;
     }
     footer img{
         display: none;
         justify-content: center;
     }
 }
+
