@@ -66,8 +66,8 @@ header{
     color: #423d3d;
 }
 .container-main{
-    height: 97.5vh;
-    padding: 0 5% 0 5%;
+    height: 95vh;
+    padding: 5% 5% 5% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,18 +75,19 @@ header{
 .container-main-login{
     background-color: #FFE49A;
     width: 40%;
-    height: 72%;
+    height: 100%;
+    margin-top: 12ch;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 30px 40px;
-
+    padding: 45px 30px;
+    margin-top:12vh;
 }
 .container-main-login h2{
-    font-size: 48px;
+    font-size: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
@@ -95,7 +96,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 20px;
     width: 100%;
    
 }
@@ -110,9 +111,7 @@ form fieldset{
     padding: 0 20px;
     border-radius: 11px;
 }
-fieldset:hover{
-    background-color: #f8f8f8;
-}
+
 form .input-box input{
     border: 0;
     width: 100%;
@@ -133,16 +132,134 @@ form .input-box input{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding: 12px 0;
+    padding: 12px ;
     cursor:pointer;
 }
 .container-main-login button:hover{
     opacity: 0.8;
 }
 
+
+@media (max-width:850px){
+    #nav-bar{
+        height: 9vh;
+        padding:0 21px 0 21px; 
+    }
+    nav.off .menu{
+        display: none;
+    }
+    nav.active .menu{
+        display: block;       
+    }
+    nav.active .menu-hamburguer .linha2{
+        display: none;
+    }
+    nav.active .menu-hamburguer .linha1{
+        transform: rotate(140deg);
+        position: absolute;
+        top: 4.1vh;
+    }
+    nav.active .menu-hamburguer .linha3{
+        transform: rotate(-140deg);       
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 80vw;   
+        background-color: #FAFAFA;
+        z-index: 9999;
+        animation: slide 0.5s ease-in-out;
+        opacity: 0.9;
+    }
+    @keyframes slide {
+        from{
+          
+           transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .menu .container-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        padding-top: 10px;
+        padding-bottom: 20px;  
+        width: 100%;
+        height: 100vh;
+        gap: 30px;
+        
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem;
+        font-size: 18px;
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+    .logo img{
+        height: 26px;
+    }
+    .container-main{
+        display: flex;
+        justify-content: center; 
+        padding: 0; 
+    }
+    .container-main-login{     
+        position: fixed;
+        border-radius: 25px;   
+        gap: 30px;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 4vw;
+    }
+    .container-main img{
+        display: none;
+    }
+    .container-main-login h2{
+        font-size: 40px;
+    }
+    form{
+        gap: 25px;
+        width: 80%;
+
+    }
+    form legend{
+        font-size: 18px;
+     
+    }
+    form fieldset{
+        background-color: #ffffff;
+        width: 100%;
+        padding: 5px 12px;
+        border-radius: 8px;
+    }
+    form .input-box input{
+        padding: 3px 5px;  
+    }
+    .container-main-login button{
+        width: 80%;
+        background: transparent;
+        border: 4px solid #ffffff;
+        border-radius: 11px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 10px 0;
+        cursor:pointer;
+    }
+   
+}
+
+
 @media (max-width:500px){
     #nav-bar{
-        height: 50px;
+        height: 9vh;
         padding:0 21px 0 21px; 
     }
     nav.off .menu{
@@ -158,7 +275,7 @@ form .input-box input{
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
         position: absolute;
-        top: 22px;
+        top: 4.1vh;
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);
@@ -167,7 +284,7 @@ form .input-box input{
     .menu{
         display: none;
         position: absolute;
-        top: 50px;
+        top: 9vh;
         right: 0;
         width: 80vw;   
         background-color: #FAFAFA;
@@ -198,7 +315,7 @@ form .input-box input{
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-       
+        font-size: 18px;
     }
     .menu .container-menu .login{
         padding: 3px 60px;
@@ -216,18 +333,17 @@ form .input-box input{
         height: 26px;
     }
     .container-main{
-        height: 97.5vh;
-        padding: 0 10% 0 10%;
         display: flex;
         justify-content: center;
        
     }
-    .container-main-login{     
-        width: 100%;
-        border-radius: 28px;   
-        gap: 15px;
-        padding: 23px 30px;
+    .container-main-login{          
+        position: fixed;  
+        gap: 25px;
         justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 4vh 4vw;
     }
     .container-main img{
         display: none;
@@ -236,25 +352,22 @@ form .input-box input{
         font-size: 40px;
     }
     form{
-        gap: 14px;
+        gap: 20px;
         width: 100%;
        
     }
     form legend{
-        font-size: 18px;
+        font-size: 16px;
      
     }
     form fieldset{
         background-color: #ffffff;
         width: 100%;
-        padding: 0 12px;
+        padding: 5px 12px;
         border-radius: 8px;
     }
     form .input-box input{
-
-        padding: 6px 5px;
-        
-        
+        padding: 3px 5px;
     }
     .container-main-login button{
         width: 100%;
@@ -262,10 +375,10 @@ form .input-box input{
         border: 4px solid #ffffff;
         border-radius: 11px;
         color: #000000;
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        padding: 12px 0;
+        padding: 10px 0;
         cursor:pointer;
     }
 }
