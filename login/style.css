@@ -167,7 +167,7 @@ form .input-box input{
         position: absolute;
         top: 9vh;
         right: 0;
-        width: 80vw;   
+        width: 60vw;   
         background-color: #FAFAFA;
         z-index: 9999;
         animation: slide 0.5s ease-in-out;
@@ -277,7 +277,7 @@ form .input-box input{
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
         position: absolute;
-        top: 4.1vh;
+        top: 4vh;
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);       

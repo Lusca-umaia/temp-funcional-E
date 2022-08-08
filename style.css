@@ -117,7 +117,7 @@ header{
     background-color:#423d3d;
 }
 .container-img-vetor .img-vetor{
-    margin-top:9vh;
+    margin-top:5vh;
     height: 60%;
 }
  main{
@@ -646,7 +646,7 @@ footer form .email{
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
         position: absolute;
-        top: 4.1vh;
+        top: 4vh;
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);
