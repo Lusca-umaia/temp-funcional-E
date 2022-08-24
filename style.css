@@ -84,10 +84,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    margin-top: 15vh;
 }
 .container-atualize-se .descricao{
     padding-left: 55px;
+    width: 50%;
 }
 .container-atualize-se .descricao h2{
     font-size:70px;
@@ -116,9 +117,11 @@ header{
 .container-atualize-se .descricao .comecar:hover{
     background-color:#423d3d;
 }
+.container-img-vetor{
+    width:50%;
+}
 .container-img-vetor .img-vetor{
-    margin-top:5vh;
-    height: 60%;
+    width: 100%;
 }
  main{
     padding: 0 5% 0 5%;
@@ -191,6 +194,8 @@ section .container-valores .coluna-valores .descricao-valores p{
     position: absolute;
     z-index: 99;
     bottom: 0;
+    right: 8px;
+    
 }
 .eventos h3{
     font-size: 30px;
@@ -268,16 +273,19 @@ footer form .email{
     #nav-bar{
         padding: 0 35px 0 50px;
     }
+    .logo img{
+        height: 40px;
+    }
     .container-menu{
         display: flex;
         gap: 24px;
         
     }
     .item-menu{
-        font-size: 23px;
+        font-size: 20px;
     }
     .container-menu .login{
-        padding: 3px 60px;
+        padding: 3px 50px;
         border-radius: 90px;
     }
     .container-menu .login:hover{
@@ -287,19 +295,16 @@ footer form .email{
         padding-left: 55px;
     }
     .container-atualize-se .descricao h2{
-        font-size:70px;
+        font-size:50px;
     }
     .container-atualize-se .descricao h3,p{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 45px;
     }
     .container-atualize-se .descricao .comecar{
-        font-size: 30px;
+        font-size: 20px;
         border-radius: 14px;
         padding: 13px 60px;
-    }
-    .container-img-vetor .img-vetor{
-        height: 50%;
     }
     section{
         border-radius:20px;
@@ -430,16 +435,9 @@ footer form .email{
     }
 }
 
-
-@media (max-width:1025px){
-    .container-img-vetor .img-vetor{
-        height: 60vh;
-    }
-}
-
 /* media para tablet */
 
-@media (max-width:850px){
+@media (max-width:900px){
     #nav-bar{
         height: 9vh;
         padding:0 50px 0 50px; 
@@ -513,11 +511,13 @@ footer form .email{
     }
     .container-atualize-se{
         display: block;
-        padding:10% 7% 10% 7%;      
+        padding:10% 7% 10% 7%;
+        margin-top: 4vh;      
     }
     .container-atualize-se .descricao{      
        padding: 0;
        margin-top: 10%;
+       width:100%;
     }
     .container-atualize-se .descricao h2{
         font-size:55px;
@@ -633,24 +633,12 @@ footer form .email{
 @media (max-width:500px){
     #nav-bar{
         height: 9vh;
-        padding:0 21px 0 21px; 
+        padding:0 40px 0 40px; 
     }
 
     nav.active .menu{
         display: block; 
         
-    }
-    nav.active .menu-hamburguer .linha2{
-        display: none;
-    }
-    nav.active .menu-hamburguer .linha1{
-        transform: rotate(140deg);
-        position: absolute;
-        top: 4vh;
-    }
-    nav.active .menu-hamburguer .linha3{
-        transform: rotate(-140deg);
-       
     }
     .menu{
         display: none;

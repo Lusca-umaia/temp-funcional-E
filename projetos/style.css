@@ -217,7 +217,26 @@ footer form .email{
     font-family: 'Montserrat', sans-serif; 
 }
 
-@media (max-width:850px){
+
+@media (max-width:1300px){
+    #nav-bar{
+        padding: 0 35px 0 50px;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .container-menu{
+        display: flex;
+        gap: 24px;
+        
+    }
+    .item-menu{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:900px){
     #nav-bar{
         height: 9vh;
         padding:0 21px 0 21px; 
@@ -235,7 +254,6 @@ footer form .email{
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
         position: absolute;
-        top: 4vh;
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);       
@@ -416,17 +434,6 @@ footer form .email{
     }
     nav.active .menu{
         display: block;       
-    }
-    nav.active .menu-hamburguer .linha2{
-        display: none;
-    }
-    nav.active .menu-hamburguer .linha1{
-        transform: rotate(140deg);
-        position: absolute;
-        top: 4vh;
-    }
-    nav.active .menu-hamburguer .linha3{
-        transform: rotate(-140deg);       
     }
     .menu{
         display: none;
