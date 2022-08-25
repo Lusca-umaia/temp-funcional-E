@@ -18,26 +18,35 @@ body{
     background-color:#FAFAFA;
 }
 
-header{
+.header-container{
     background-color:#FFC017;
     border-bottom: 3px solid #000000;
     display:flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
+}
+.header-container-nav{
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    background-color:#FFC017;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
 }
 #nav-bar{
     height: 11.5vh;
-    width: 100%;
+    width: 80%;
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #000000;
+    align-items: center; 
     background-color:#FFC017;
-    position: fixed;
-    z-index: 999;
-    padding: 0 22px 0 104px;
-}
 
+}
+.logo img{
+    height: 5vh;
+}
 #nav-bar.active .menu{
     display: block;
     
@@ -59,11 +68,11 @@ header{
 }
 .container-menu{
     display: flex;
-    gap: 24px;
+    gap: 2vw;
     
 }
 .item-menu{
-    font-size: 23px;
+    font-size:3vh;
     font-family:'Reem Kufi', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 400;
@@ -72,7 +81,7 @@ header{
     color: #423d3d;
 }
 .container-menu .login{
-    padding: 3px 60px;
+    padding:2px 3.5vw;
     background-color: #0C0C0C;
     color: #ffff;
     border-radius: 90px;
@@ -81,22 +90,28 @@ header{
     background-color:#423d3d;
 }
 .container-atualize-se{
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.container-atualize-se-descricao{
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15vh;
 }
 .container-atualize-se .descricao{
-    padding-left: 55px;
     width: 50%;
 }
 .container-atualize-se .descricao h2{
-    font-size:70px;
+    font-size:10vh;
     font-family:'Montserrat', sans-serif ;
     font-weight: 600;
 }
 .container-atualize-se .descricao h3,p{
-    font-size: 30px;
+    font-size:3.5vh;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 45px;
@@ -107,12 +122,12 @@ header{
 }
 .container-atualize-se .descricao .comecar{
     color: #ffff;
-    font-size: 30px;
+    font-size: 3vh;
     font-family: 'Montserrat', sans-serif ;
     font-weight: 600;
     background-color: #0C0C0C;
     border-radius: 14px;
-    padding: 13px 60px;
+    padding: 1.5vh 3vw;
 }
 .container-atualize-se .descricao .comecar:hover{
     background-color:#423d3d;
@@ -123,30 +138,34 @@ header{
 .container-img-vetor .img-vetor{
     width: 100%;
 }
- main{
-    padding: 0 5% 0 5%;
- }
 section{
+    width:100%;
+}
+.section-container-valores{
     display: flex;
     flex-direction:column;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: #ffff;
     border-radius:25px;
-    padding: 121px 64px 190px 64px;  
-    margin-top: 55px;
-    margin-bottom: 157px;  
+    padding: 7vh 3vw;  
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    -webkit-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
+    -moz-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
+    box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);  
 }
 
 section .titulos h3{
-    font-size:30px;
+    font-size:4vh;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
 }
 section .titulos h2{
-    font-size:45px;
+    font-size:6vh;
     font-weight: 600;
     font-family:'Montserrat', sans-serif ;
-    margin-bottom: 96px;
+    margin-bottom: 13vh;
 }
 section .container-valores{
     display:flex;
@@ -154,10 +173,10 @@ section .container-valores{
     
 }
 section .container-valores .coluna-valores{
-    width: 318px;
+    width: 30%;
 }
 section .container-valores .coluna-valores h3{
-    font-size:30px;
+    font-size:3.5vh;
     font-weight: 600;
     font-family:'Montserrat', sans-serif ;
     border-bottom: 3px solid #D9D9D9;
@@ -165,48 +184,63 @@ section .container-valores .coluna-valores h3{
     justify-content: space-between;
     margin-bottom: 26px;
 }
+section .container-valores .coluna-valores h3 img{
+    width:2vw;
+}
 section .container-valores .coluna-valores .descricao-valores p{
-    font-size:20px;
+    font-size:2.5vh;
     font-weight: 500;
     font-family:'Montserrat', sans-serif ;
-    line-height: 28.04px;
+    line-height: 4.5vh;
+}
+.container-opiniao-salomao{
+    width: 100%;
 }
 .container-opiniao{
+    width:80%;
+    margin:0 auto;
     display:flex;
     background-color: #FFC017;
-    padding:27px 50px 0 50px;
-    height: 294px;
+    height: 30vh;
     position: relative;
-    margin-bottom: 144px;
+    margin-bottom: 20vh;
+    padding:2vh 2.5vw;
 }
 .container-opiniao .titulo-opiniao h3{
     font-family: 'Montserrat', italic;
-    font-size:28px;
+    font-size:3.5vh;
     font-weight: 500;
 }
 .container-opiniao .titulo-opiniao p{
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size:2.5vh;
     font-weight: 500;
-    line-height: 28.04px;
+    line-height: 4vh;
 }
 .container-opiniao .img-vetor-opiniao img{
     position: absolute;
     z-index: 99;
     bottom: 0;
     right: 8px;
-    
+    width: 30vw;
+}
+.container-eventos{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
 }
 .eventos h3{
-    font-size: 30px;
+    font-size: 3.5vh;
     color:#000000;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500;
-    margin-bottom: 26px;
+    margin-bottom: 5vh;
 }
 .eventos .eventos-title{
     border-bottom: 2px solid #E9E9E9;
-    margin-bottom: 32px;
+    margin-bottom: 7vh;
     color:#656565;
 }
 .eventos .semana-box{
@@ -218,246 +252,145 @@ section .container-valores .coluna-valores .descricao-valores p{
 }
 .eventos .semana-box .semana-secion img{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 3vh;
 }
 
 footer{
-    margin-top: 150px;
+    margin-top: 7vh;
     background-color:#FFE49A;
-    padding:35px 100px 35px 100px;
+    padding:4vh 5vw;
     display: flex;
     justify-content: space-between;
 }
 footer h2{
-    font-size:54px;
+    font-size:5vh;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
 }
 footer .descricao-footer p{
-    font-size:30px;
+    font-size:3vh;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
 }
 footer form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 3vh;
 }
 footer form .btn-enviar{
-    width:111px;
-    padding:10px 15px;
+    width:10vw;
+    padding:1.5vh 2vw;
     border: 0;
     cursor: pointer;
     border-radius:11px;
     background-color: #ffff;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
 }
 footer form .email{
     border: 0;
     outline: none;
-    padding:20px 40px ;
+    padding:3vh 20px;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius:11px;
-    font-size: 19px;
+    font-size: 2vh;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
 }
-
+footer img{
+    width: 35%;
+}
 
  /* media para telas menores de notebook */
 
- @media (max-width:1300px){
-    #nav-bar{
-        padding: 0 35px 0 50px;
-    }
+ @media (max-width:1024px){
     .logo img{
-        height: 40px;
-    }
-    .container-menu{
-        display: flex;
-        gap: 24px;
-        
-    }
-    .item-menu{
-        font-size: 20px;
+        height:4vh;
     }
     .container-menu .login{
-        padding: 3px 50px;
+        padding: 0.3vh 3vw;
         border-radius: 90px;
     }
-    .container-menu .login:hover{
-        background-color:#423d3d;
-    }
-    .container-atualize-se .descricao{
-        padding-left: 55px;
+    .container-atualize-se{
+        padding:5vh 0;
     }
     .container-atualize-se .descricao h2{
-        font-size:50px;
+        font-size:7vh;
     }
-    .container-atualize-se .descricao h3,p{
-        font-size: 25px;
-        margin-bottom: 45px;
+    .container-atualize-se .descricao h3{
+        font-size: 3vh;
     }
     .container-atualize-se .descricao .comecar{
-        font-size: 20px;
+        font-size: 2.5vh;
         border-radius: 14px;
-        padding: 13px 60px;
+        padding: 1.5vh 4vw;
     }
-    section{
-        border-radius:20px;
-        padding:10% 5%;  
-        margin-top: 10vh;
-        margin-bottom: 15vh;  
-    }
-    
     section .titulos h3{
-        font-size:30px;
+        font-size:3vh;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 500;
     }
     section .titulos h2{
-        font-size:45px;
+        font-size:4vh;
         font-weight: 600;
         font-family:'Montserrat', sans-serif ;
         margin-bottom: 96px;
     }
     section .container-valores{
         display:flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;     
     }
     section .container-valores .coluna-valores{
-        width: 318px;
-    }
-    section .container-valores .coluna-valores h3{
-        font-size:30px;
-        font-weight: 600;
-        font-family:'Montserrat', sans-serif ;
-        border-bottom: 3px solid #D9D9D9;
-        display:flex;
-        justify-content: space-between;
-        margin-bottom: 26px;
+        width: 28%;
     }
     section .container-valores .coluna-valores .descricao-valores p{
-        font-size:20px;
-        font-weight: 500;
-        font-family:'Montserrat', sans-serif ;
-        line-height: 28.04px;
+        font-size: 2.3vh;
     }
     .container-opiniao{
-        display:flex;
-        background-color: #FFC017;
-        padding:27px 50px 0 50px;
-        height: 294px;
-        position: relative;
-        margin-bottom: 144px;
+        height: 25vh;
     }
     .container-opiniao .titulo-opiniao h3{
-        font-size:25px;
+       font-size: 2.7vh;
     }
     .container-opiniao .titulo-opiniao p{
-        font-size:20px;
+        font-size: 2vh;
+       line-height: 3.5vh;
     }
     .container-opiniao .img-vetor-opiniao img{
-        position: absolute;
-        z-index: 99;
-        bottom: 0;
-        right: -6vh;
-        height:350px;
+        width: 28vw;
+        right: 5px
     }
     .eventos h3{
-        font-size: 30px;
-        color:#000000;
-        font-family: 'Montserrat', sans-serif; 
-        font-weight: 500;
-        margin-bottom: 26px;
-    }
-    .eventos .eventos-title{
-        border-bottom: 2px solid #E9E9E9;
-        margin-bottom: 32px;
-        color:#656565;
-    }
-    .eventos .semana-box{
-        display:flex;
-        justify-content: space-between;
+        font-size: 3vh;
     }
     .eventos .semana-box .semana-secion{
-        width: 45%;
+        width: 48%;
     }
     .eventos .semana-box .semana-secion img{
         width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:35px 40px 35px 70px;
-    }
-    footer h2{
-        font-size:46px;
-        font-family: 'Montserrat', sans-serif; 
-        font-weight: 600;
-    }
-    footer .descricao-footer p{
-        font-size:25px;
-        font-family: 'Montserrat', sans-serif; 
-        font-weight: 400;
-    }
-    footer img{
-        height: 150px;
-    }
-    footer form{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    footer form .btn-enviar{
-        width:111px;
-        padding:10px 15px;
-        border: 0;
-        cursor: pointer;
-        border-radius:11px;
-        background-color: #ffff;
-        font-size: 20px;
-        font-weight: 500;
-        font-family: 'Montserrat', sans-serif; 
-    }
-    footer form .email{
-        border: 0;
-        outline: none;
-        padding:20px 40px ;
-
     }
 }
 
 /* media para tablet */
 
-@media (max-width:900px){
+@media (max-width:830px){
     #nav-bar{
-        height: 9vh;
-        padding:0 50px 0 50px; 
+        height: 9vh;       
     }
-
     nav.active .menu{
-        display: block; 
-        
+        display: block;        
     }
     nav.active .menu-hamburguer .linha2{
         display: none;
     }
     nav.active .menu-hamburguer .linha1{
         transform: rotate(140deg);
-        position: absolute;
-        
+        position: absolute;     
     }
     nav.active .menu-hamburguer .linha3{
         transform: rotate(-140deg);
-       
     }
     .menu{
         display: none;
@@ -487,12 +420,9 @@ footer form .email{
         width: 100%;
         height: 100vh;
         gap: 35px;
-       
-
     }
     .menu .container-menu .item-menu{
-        padding: 1rem;
-       
+        padding: 1rem;    
     }
     .menu .container-menu .login{
         padding: 3px 60px;
@@ -500,64 +430,37 @@ footer form .email{
         color: #ffff;
         border-radius: 90px;
     }
-    .nav-bar .logo{
-        padding-left:21px;
-    }
     .menu-hamburguer{
         display: flex;
     }
-    .logo img{
-        height: 26px;
-    }
     .container-atualize-se{
-        display: block;
-        padding:10% 7% 10% 7%;
-        margin-top: 4vh;      
+        display: block; 
+        padding:0 10% 10% 10%;    
     }
     .container-atualize-se .descricao{      
-       padding: 0;
-       margin-top: 10%;
-       width:100%;
+       padding: 0;  
+       width:100%;        
     }
     .container-atualize-se .descricao h2{
-        font-size:55px;
+        margin-bottom: 3vh;
     }
     .container-atualize-se .descricao h3{
-        display: block;
-        font-size: 28px;
-        margin-bottom: 3vh;
+        display: none;
     }
     .container-atualize-se .descricao p{
         display:block;
-        font-size:18px;
-        margin-bottom:5vh;
-               
+        font-size:2.5vh;
+        margin-bottom:5vh ;
+        width: 100%;
     }
     .container-atualize-se .descricao .comecar{
-        font-size:20px;
-        padding: 14px 45px; 
-        border-radius: 12px;
+        padding: 9px 35px;
     }
     .container-img-vetor{
         display:none;
     }
-    main{
-        padding: 0 10% 0 10%;
-        
-    }
-    section{
-        border-radius:20px;
-        padding:10% 5%;  
-        margin-top: 10vh;
-        margin-bottom: 15vh;  
-    }
-    
-    section .titulos h3{
-        font-size:25px;
-    }
-    section .titulos h2{
-        font-size:30px;
-        margin-bottom: 8vh;
+    .section-container-valores{
+        width: 90%;
     }
     section .container-valores{
         display:flex;
@@ -565,63 +468,44 @@ footer form .email{
         align-items: center;
         flex-direction: column;
         gap: 3vh;
-        
+        margin-bottom: 0;
     }
     section .container-valores .coluna-valores{
-        width: 318px;
+       width: 90%;
     }
-    section .container-valores .coluna-valores h3{
-        font-size:22px;
-        font-weight: 600;       
-    }
-    section .container-valores .coluna-valores .descricao-valores p{
-        font-size:18px;
+    section .container-valores .coluna-valores h3 img{
+        width: 4.5vw;
     }
     .container-opiniao{
         display:none;
+    } 
+    .container-eventos{
+        width: 90%;
     }
-    .eventos{
-        margin-top: 34px;
-    }
-    .eventos h3{
-        font-size: 22px;
-    }
-    .eventos .eventos-title{
-        font-size: 26px;
-    }
-       
     .eventos .semana-box{
         flex-direction: column;
     }
     .eventos .semana-box .semana-secion{
         width: 100%;
     }
-    footer{
-        padding: 5% 15%;
-    }
     footer .descricao-footer h2{
-        font-size: 30px;
+        font-size: 3vh;
     }
     footer .descricao-footer p{
-        font-size: 20px;     
+        font-size: 2.5vh;
     }
     footer form .email{
-        padding:19px 20px ;
-        font-size: 15px;
         border-radius:8px;
-    }
-    footer form{
-        gap: 20px;
+        padding: 2vh;
+        font-size: 1.8vh;
     }
     footer form .btn-enviar{
-        width:100px;
-        padding:10px 20px;
-        font-size: 16px;
         border-radius: 8px;
+        font-size: 2vh;
+        width: 20vw;      
     }
     footer img{
         display: none;
-
     }
 }
 
@@ -631,46 +515,8 @@ footer form .email{
 /* media para celulares */
 
 @media (max-width:500px){
-    #nav-bar{
-        height: 9vh;
-        padding:0 40px 0 40px; 
-    }
-
-    nav.active .menu{
-        display: block; 
-        
-    }
     .menu{
-        display: none;
-        position: absolute;
-        top: 9vh;
-        right: 0;
         width: 80vw;   
-        background-color: #ffc117;
-        opacity: 0.9;
-        z-index: 9999;
-        animation: slide 0.5s ease-in-out;
-    }
-    @keyframes slide {
-        from{
-          
-           transform: translateX(100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    .menu .container-menu{
-        display: flex;
-        flex-direction: column;
-        align-items:center; 
-        padding-top: 10px;
-        padding-bottom: 20px;  
-        width: 100%;
-        height: 100vh;
-        gap: 30px;
-       
-
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
@@ -683,23 +529,12 @@ footer form .email{
         color: #ffff;
         border-radius: 90px;
     }
-    .nav-bar .logo{
-        padding-left:21px;
-    }
-    .menu-hamburguer{
-        display: flex;
-    }
-    .logo img{
-        height: 26px;
-    }
     .container-atualize-se{
         display: block;
-       padding:10% 7% 10% 7%;
-      
+       padding:0% 7% 10% 7%;
     }
     .container-atualize-se .descricao{      
        padding: 0;
-       margin-top: 15%;
     }
     .container-atualize-se .descricao h2{
         font-size:40px;
@@ -720,15 +555,24 @@ footer form .email{
        
         border-radius: 8px;
     }
+    .section-container-valores{
+        border-radius:20px;
+    }
     .container-img-vetor{
         display:none;
     }
-    main{
-        padding: 0 5% 0 5%;
-        
+    section .titulos h3{
+        font-size:2vh;
     }
-    section{
-        display: none;
+    section .titulos h2{
+        font-size: 3vh;
+    }
+    section .container-valores .coluna-valores h3{
+        font-size: 20px;
+    }
+    section .container-valores .coluna-valores .descricao-valores p{
+        font-size: 14px;
+        line-height: 25px;
     }
     .container-opiniao{
         display:none;

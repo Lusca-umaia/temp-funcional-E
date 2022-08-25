@@ -15,47 +15,30 @@ font-family: 'Montserrat Alternates', sans-serif;
 body{
     background-color:#FAFAFA;
 }
-
-header{
-    display:flex;
-    flex-direction: column;
-}
 #nav-bar{
     height: 11.5vh;
     width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #000000;
     position: fixed;
     background-color: #FAFAFA;
     z-index: 999;
-    padding: 0 104px 0 104px;
+    padding: 0 10vw;
+    -webkit-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.8);
+    -moz-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.8);
+    box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.8);
 }
-
-#nav-bar.active .menu{
-    display: block;
-    
+.logo img{
+    height: 50px;
 }
 .menu-hamburguer{
-    display:flex;
-    flex-direction: column;
-    gap: 3px;
     display: none;
-    cursor: pointer;
-   
-}
-.menu-hamburguer .linha{
-    width: 30px;
-    height: 4px;
-    background-color: #000000;
-    border-radius: 3px;
-    transition: 0.5s;
+    cursor: pointer;  
 }
 .container-menu{
     display: flex;
-    gap: 24px;
-    
+    gap: 24px;  
 }
 .item-menu{
     font-size: 23px;
@@ -68,17 +51,9 @@ header{
     color: #423d3d;
 }
 
-@media (max-width:1300px){
-    #nav-bar{
-        padding: 0 35px 0 50px;
-    }
+@media (max-width:1024px){
     .logo img{
         height: 40px;
-    }
-    .container-menu{
-        display: flex;
-        gap: 24px;
-        
     }
     .item-menu{
         font-size: 20px;
@@ -86,27 +61,10 @@ header{
 }
 
 
-@media (max-width:900px){
+@media (max-width:768px){
     #nav-bar{
-        height: 9vh;
         padding:0 21px 0 21px; 
-        background-color:#FFE49A;
-    }
-    nav.off .menu{
-        display: none;
-    }
-    nav.active .menu{
-        display: block;       
-    }
-    nav.active .menu-hamburguer .linha2{
-        display: none;
-    }
-    nav.active .menu-hamburguer .linha1{
-        transform: rotate(140deg);
-        position: absolute;
-    }
-    nav.active .menu-hamburguer .linha3{
-        transform: rotate(-140deg);       
+        background-color:#FAFAFA;
     }
     .menu{
         display: none;
@@ -115,10 +73,10 @@ header{
         right: 0;
         width: 60vw;
         opacity: 0.9;
-        background-color: #FFE49A;
+        background-color: #ffffff;
         z-index: 9999;
+        opacity: 0.9;
         animation: slide 0.5s ease-in-out;
-       
     }
     @keyframes slide {
         from{
@@ -142,65 +100,28 @@ header{
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-        font-size: 20px;
-      
+        font-size: 20px;     
     }
     .menu-hamburguer{
-        display: flex;
+        display: block;
+    }
+    .menu-hamburguer i{
+        height: 30px;
     }
     .logo img{
-        height: 26px;
+        height: 30px;
     }
 }
 
 @media (max-width:500px){
     #nav-bar{
         height: 9vh;
-        padding:0 21px 0 21px; 
-    }
-    nav.off .menu{
-        display: none;
-    }
-    nav.active .menu{
-        display: block;       
     }
     .menu{
-        display: none;
-        position: absolute;
-        top: 9vh;
-        right: 0;
         width: 80vw;   
-        background-color: #FFE49A;
-        z-index: 9999;
-        animation: slide 0.5s ease-in-out;
-        opacity: 0.9;
-    }
-    @keyframes slide {
-        from{
-          
-           transform: translateX(100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    .menu .container-menu{
-        display: flex;
-        flex-direction: column;
-        align-items:center; 
-        padding-top: 10px;
-        padding-bottom: 20px;  
-        width: 100%;
-        height: 100vh;
-        gap: 30px;
-        
     }
     .menu .container-menu .item-menu{
-        padding: 1rem;
         font-size: 18px;
-    }
-    .menu-hamburguer{
-        display: flex;
     }
     .logo img{
         height: 26px;
