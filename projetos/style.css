@@ -15,22 +15,32 @@ font-family: 'Montserrat Alternates', sans-serif;
 body{
     background-color:#FAFAFA;
 }
-
-header{
+.header-container{
+    border-bottom: 3px solid #000000;
     display:flex;
-    flex-direction: column;
+    flex-direction: column;   
+}
+.header-container-nav{
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    background-color:#fafafa;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
 }
 #nav-bar{
     height: 11.5vh;
-    width: 100%;
+    width: 80%;
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #000000;
-    position: fixed;
-    background-color: #FAFAFA;
-    z-index: 999;
-    padding: 0 104px 0 104px;
+    align-items: center; 
+    background-color:#fafafa;
+}
+.logo img{
+    height: 5vh;
 }
 
 #nav-bar.active .menu{
@@ -54,11 +64,11 @@ header{
 }
 .container-menu{
     display: flex;
-    gap: 24px;
+    gap: 2vw;
     
 }
 .item-menu{
-    font-size: 23px;
+    font-size:3vh;
     font-family:'Reem Kufi', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 400;
