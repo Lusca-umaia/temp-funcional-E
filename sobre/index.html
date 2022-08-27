@@ -4,50 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <title>Sobre</title>
 </head>
 <body>
     <header>
-        <nav id="nav-bar" >
-            <div class="logo">
-                <a href="/"><img src="/img/logo.svg" alt="" ></a>
+        <div class="header-container">
+            <div class="header-container-nav">
+                <nav id="nav-bar">
+                    <div class="logo">
+                        <a href="/"><img src="/img/logo.svg" alt="" ></a>
+                    </div>
+                    <div class="menu-hamburguer" id="btn-hamburguer">
+                        <div class="linha linha1"></div>
+                        <div class="linha linha2"></div>
+                        <div class="linha linha3"></div>
+                    </div>
+                    <div class="menu">
+                        <ul class="container-menu">
+                            <li class="list-menu">
+                                <a href="/projetos/index.html" class="item-menu">projetos</a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="item-menu">podcast</a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="item-menu">contato</a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="/index.html" class="item-menu">inicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="menu-hamburguer" onclick="ativaMenu()">
-                <i id="burguer" class="material-symbols-outlined" >
-                    menu
-                </i>
             </div>
-            <div id="menu" class="menu">
-                <ul class="container-menu">
-                    <li class="list-menu">
-                        <a href="#" class="item-menu">projetos</a>
-                    </li>
-                    <li class="list-menu">
-                        <a href="#" class="item-menu">podcast</a>
-                    </li>
-                    <li class="list-menu">
-                        <a href="#" class="item-menu">contato</a>
-                    </li>
-                    <li class="list-menu">
-                        <a href="/sobre/index.html" class="item-menu">sobre</a>
-                    </li>
-                    <li class="list-menu">
-                        <a href="/index.html" class="item-menu">Inicio</a>
-                    </li>                     
-                </ul>
-            </div>
-        </nav>
     </header>
-    <script>
-        function ativaMenu(){
-            if (menu.style.display == 'block'){
-                menu.style.display = 'none'
-            }
-            else
-            menu.style.display = 'block'
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
