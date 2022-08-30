@@ -39,8 +39,8 @@ body{
     transition: all 0.5s;
 }
 #nav-bar{
-    height: 11.5vh;
-    width: 80%;
+    height: 75px;
+    width: 1100px;
     display:flex;
     justify-content: space-between;
     align-items: center; 
@@ -49,7 +49,7 @@ body{
     background-color: #35AB7B;
 }
 .logo img{
-    height: 9vh;
+    height: 60px;
 }
 #nav-bar.active .menu{
     display: block;
@@ -72,11 +72,11 @@ body{
 }
 .container-menu{
     display: flex;
-    gap: 2vw;
+    gap:30px;
     
 }
 .item-menu{
-    font-size:3vh;
+    font-size:20px;
     font-family:'Reem Kufi', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 400;
@@ -85,93 +85,92 @@ body{
     color: #423d3d;
 }
 .container-menu .login{
-    padding:2px 3.5vw;
+    padding:2px 40px;
     background-color: #0C0C0C;
     color: #ffff;
-    border-radius: 90px;
+    border-radius: 60px;
 }
 .container-menu .login:hover{
     background-color:#423d3d;
 }
 .container-futuro{
-    margin-top: 11.5vh;
-    height: 80vh;
+    margin-top:75px;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content:center;
-    padding:10vh 0;
+    padding:70px 0;
 }
 .container-futuro-descricao{
-    width: 80%;
+    width: 1100px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
 }
 .container-futuro .descricao{
-    width: 70%;
+    width: 100%;
 }
-.container-futuro .descricao h2{
-    font-size:10vh;
-    line-height: 13vh;
+.container-futuro .descricao h1{
+    font-size:70px;
     font-family:'Montserrat', sans-serif ;
     font-weight: 600;
-    margin-bottom: 3vh;
+    margin-bottom:20px;
 }
 .container-futuro .descricao p{
-    font-size:3vh;
+    font-size:20px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 5vh;
-    width:90%;
+    margin-bottom: 40px;
+    width:60%;
 }
 .container-futuro .descricao .comecar{
     color: #ffff;
-    font-size: 3vh;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif ;
     font-weight: 600;
     background-color: #0C0C0C;
     border-radius: 12px;
-    padding: 1.8vh 3.4vw;
+    padding: 12px 55px;
     
 }
 .container-futuro .descricao .comecar:hover{
     background-color:#423d3d;
 }
-.container-img-vetor{
+/* .container-img-vetor{
     width:50%;
 }
 .container-img-vetor .img-vetor{
     width: 100%;
-}
+} */
 section{
     width:100%;
 }
 .section-container-valores{
     display: flex;
     flex-direction:column;
-    width: 80%;
+    width: 1100px;
     margin: 0 auto;
     background-color: #ffff;
     border-radius:25px;
-    padding: 7vh 4vw 20vh 4vw;  
-    margin-top: 10vh;
-    margin-bottom: 30vh;
+    padding:90px 45px;  
+    margin-top:80px;
+    margin-bottom: 200px;
     -webkit-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
     -moz-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
     box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);  
 }
-
+section .titulos{
+    margin-bottom: 65px;
+}
 section .titulos h3{
-    font-size:4vh;
+    font-size:30px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
 }
 section .titulos h2{
-    font-size:6vh;
+    font-size:40px;
     font-weight: 600;
     font-family:'Montserrat', sans-serif ;
-    margin-bottom: 13vh;
 }
 section .container-valores{
     display:flex;
@@ -182,7 +181,7 @@ section .container-valores .coluna-valores{
     width: 30%;
 }
 section .container-valores .coluna-valores h3{
-    font-size:3.5vh;
+    font-size:25px;
     font-weight: 600;
     font-family:'Montserrat', sans-serif ;
     border-bottom: 3px solid #D9D9D9;
@@ -191,55 +190,54 @@ section .container-valores .coluna-valores h3{
     margin-bottom: 26px;
 }
 section .container-valores .coluna-valores h3 img{
-    width:2vw;
+    width:30px;
     margin-bottom: 2px;
 }
 section .container-valores .coluna-valores .descricao-valores p{
-    font-size:2.5vh;
+    font-size:20px;
     font-weight: 500;
     font-family:'Montserrat', sans-serif ;
-    line-height: 4.5vh;
+    line-height: 35px;
 }
 .container-opiniao-salomao{
     width: 100%;
 }
 .container-opiniao{
-    width:80%;
+    width:1100px;
     margin:0 auto;
     display:flex;
     background-color: #06B45F;
-    height: 30vh;
     position: relative;
-    margin-bottom: 20vh;
-    padding:2vh 2.5vw;
+    margin-bottom: 90px;
+    padding:25px 35px;
 }
 .container-opiniao .titulo-opiniao h3{
     font-family: 'Montserrat', italic;
-    font-size:3.5vh;
+    font-size:25px;
     font-weight: 500;
 }
 .container-opiniao .titulo-opiniao p{
     font-family: 'Montserrat', sans-serif;
-    font-size:2.5vh;
+    font-size:20px;
     font-weight: 500;
-    line-height: 4vh;
+    line-height:28px;
 }
 .container-opiniao .img-vetor-opiniao img{
     position: absolute;
     z-index: 99;
     bottom: 0;
     right: 8px;
-    width: 30vw;
+    width: 35%;
 }
 .container-eventos{
-    width: 80%;
+    width:1100px;
     margin:0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 50px;
 }
 .eventos h3{
-    font-size: 3.5vh;
+    font-size: 25px;
     color:#000000;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500;
@@ -247,8 +245,9 @@ section .container-valores .coluna-valores .descricao-valores p{
 }
 .eventos .eventos-title{
     border-bottom: 2px solid #E9E9E9;
-    margin-bottom: 7vh;
+    margin-bottom:50px;
     color:#656565;
+    font-size: 30px;
 }
 .eventos .semana-box{
     display:flex;
@@ -259,140 +258,165 @@ section .container-valores .coluna-valores .descricao-valores p{
 }
 .eventos .semana-box .semana-secion img{
     width: 100%;
-    margin-bottom: 3vh;
+    margin-bottom:15px;
 }
 footer{
-    padding: 0 2vh 2vh 2vh;
+    background-color:#06B45F;
+    margin-top:100px; 
 }
 .footer-container{
-    margin-top: 7vh;
-    background-color:#06B45F;
-    padding:4vh 5vw;
     display: flex;
     justify-content: space-between;
     border-radius:20px;
+    width: 1100px;
+    margin:0 auto;
+    padding-top:40px;
 }
-footer h2{
-    font-size:5vh;
+footer h3{
+    font-size:30px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
 }
-footer .descricao-footer p{
-    font-size:3vh;
+footer .descricao-footer p,footer p{
+    font-size:20px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
+}
+footer p{
+    font-size: 14px;
 }
 footer form{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 10px;
 }
 footer form .btn-enviar{
-    width:10vw;
-    padding:1.5vh 2vw;
+    width: 30%;
+    padding:5px 10px;
     border: 0;
     cursor: pointer;
-    border-radius:11px;
+    border-radius:9px;
     background-color: #ffff;
-    font-size: 2.5vh;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 20px;
+}
+footer form .btn-enviar:hover{
+    opacity: 0.9;
 }
 footer form .email{
     border: 0;
     outline: none;
-    padding:3vh 20px;
+    padding:10px 10px;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius:11px;
-    font-size: 2vh;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
 }
-footer img{
-    width: 35%;
+footer form .email::placeholder{
+    font-size: 16px;
 }
-
+footer .container-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+footer .container-redes-sociais p{
+    color:#444343;
+}
+footer .container-redes-sociais a img{
+    width: 30px;
+}
+footer .container-redes-sociais a img:hover{
+    transition:0.5s;
+    transform: translateX(0) scale(1.2);
+}
  /* media para telas menores de notebook */
 
  @media (max-width:1024px){
     #nav-bar{
-        width: 90%;
+        width:90%;
     }
-    .logo img{
-        height:8vh;
+    .item-menu{
+        font-size:18px;
     }
-    .container-menu .login{
-        padding: 0.3vh 3vw;
-        border-radius: 90px;
-    }
-    .container-futuro{
-       align-items: flex-start;
-       height: 60vh;
+    .container-menu{
+        gap: 20px;
     }
     .container-futuro-descricao{
         width: 90%;
-        padding: 2vh 0;
     }
-    .container-futuro .descricao h2{
-        font-size:8vh;
+    .container-futuro .descricao h1{
+        font-size:60px;
         line-height: normal;
     }
-    .container-futuro .descricao h3{
-        font-size: 3vh;
+    .container-futuro .descricao p{
+        font-size: 18px;
     }
     .container-futuro .descricao .comecar{
-        font-size: 2.5vh;
+        font-size:18px;
         border-radius: 11px;
-        padding: 1.5vh 4vw;
+        padding:8px 40px;
     }
     .container-opiniao{
         width:90%;
     }
     section .titulos h3{
-        font-size:3vh;
+        font-size:25px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 500;
     }
     section .titulos h2{
-        font-size:4vh;
+        font-size:30px;
         font-weight: 600;
         font-family:'Montserrat', sans-serif ;
         margin-bottom: 96px;
+    }
+    section .titulos{
+        margin-bottom:0;
     }
     .section-container-valores{
         width:90%;
     }
     section .container-valores{
         display:flex;
-        justify-content: space-between;
-      
+        justify-content: space-between;    
     }
     section .container-valores .coluna-valores{
         width:28%;
     }
-    section .container-valores .coluna-valores .descricao-valores p{
-        font-size: 2.3vh;
+    section .container-valores .coluna-valores h3{
+        font-size: 22px;
     }
-    .container-opiniao{
-        height: 25vh;
+    section .container-valores .coluna-valores .descricao-valores p{
+        font-size:16px;
+        line-height: 30px;
     }
     .container-opiniao .titulo-opiniao h3{
-       font-size: 2.7vh;
+       font-size:20px;
     }
     .container-opiniao .titulo-opiniao p{
-        font-size: 2vh;
-       line-height: 3.5vh;
+        font-size: 16px;
+       line-height: 20px;
     }
     .container-opiniao .img-vetor-opiniao img{
-        width: 28vw;
+        width:35%;
         right: 5px
     }
     .container-eventos{
         width: 90%;
     }
+    .eventos .eventos-title{
+        font-size: 25px;
+    }
     .eventos h3{
-        font-size: 3vh;
+        font-size: 20px;
     }
     .eventos .semana-box .semana-secion{
         width: 48%;
@@ -400,38 +424,43 @@ footer img{
     .eventos .semana-box .semana-secion img{
         width: 100%;
     }
-    footer h2{
-        font-size:4vh;
+    .footer-container{
+        width:90%;
+    }
+    footer h3{
+        font-size:25px;
     }
     footer .descricao-footer p{
-        font-size:2.5vh;
+        font-size:16px;
     }
-    footer form{
-        gap: 2vh;
-    }
-    footer form .btn-enviar{
-        width:10vw;
-        padding:1.5vh 2vw;
-        border-radius:11px;
-        font-size: 2vh;
+    footer form .btn-enviar{  
+        border-radius:9px;
+        font-size: 15px;
     }
     footer form .email{
-        padding:2.5vh 20px;
         border-radius:9px;
-        font-size:2vh;
+        font-size:14px;
     }
-
-    footer img{
-        width: 35%;
+    footer form .email::placeholder{
+        font-size: 14px;
     }
-    
+    footer .container-redes-sociais{
+        padding-bottom: 10px;
+    }
+    footer .container-redes-sociais p{
+        font-size: 14px;
+    }
+    footer .container-redes-sociais a img{
+        width: 20px;
+    }
 }
 
 /* media para tablet */
 
 @media (max-width:900px){
     #nav-bar{
-        height: 9vh;       
+        height: 60px; 
+        width: 80%;      
     }
     nav.active .menu{
         display: block;        
@@ -449,7 +478,7 @@ footer img{
     .menu{
         display: none;
         position: absolute;
-        top:calc(9vh + 2px);
+        top:calc(60px + 2px);
         right: 0;
         width: 60vw;
         background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -472,80 +501,78 @@ footer img{
         padding-top: 10px;
         padding-bottom: 20px; 
         background: linear-gradient(270deg, #35AB7B -2.99%, rgba(250, 250, 250, 0) 105.17%);
-
         width: 100%;
         height: 100vh;
         gap: 35px;
     }
     .menu .container-menu .item-menu{
         padding: 1rem; 
-        font-size: 2vh;
+        font-size: 16px;
         color: #0C0C0C;   
     }
     .menu .container-menu .login{
         padding: 3px 60px;
         background-color: #0C0C0C;
         color: #FAFAFA;
-        border-radius: 90px;
+        border-radius: 30px;
     }
     .menu-hamburguer{
         display: flex;
     }
-    .container-futuro{
-        align-items:center;
-        height: 65vh;
-     }
      .container-futuro-descricao{
-         width: 100%;
-         padding-left:5vw;
+         width: 80%; 
      }
-     .container-futuro .descricao h2{
-         font-size:7vh;
-         line-height: normal;
+     .container-futuro .descricao h1{
+         font-size:45px;       
      }
      .container-futuro .descricao p{
-        font-size: 2.5vh;
+        font-size: 16px;
      }
      .container-futuro .descricao .comecar{
-         font-size: 2.5vh;
-         border-radius: 9px;
-         padding: 1.5vh 4vw;
+         font-size: 16px;
+         border-radius: 10px;
      }
      .container-opiniao{
          display: none;
      }
      section .titulos h3{
-         font-size:3vh;
+         font-size:20px;
      }
      section .titulos h2{
-         font-size:4vh;
+         font-size:26px;
          margin-bottom: 96px;
      }
      .section-container-valores{
-         width:85%;
+         width:80%;
      }
      section .container-valores{
          flex-direction:column;
-         gap: 5vh;  
+         gap:45px;  
      }
      section .container-valores .coluna-valores{
-        width:85%;
+        width:70%;
         margin: 0 auto;
      }
+     section .container-valores .coluna-valores h3{
+        font-size: 20px;
+     }
      section .container-valores .coluna-valores h3 img{
-        width: 3vh;
+        width:19px;
      }
      section .container-valores .coluna-valores .descricao-valores p{
-         font-size: 2.5vh;
+         font-size: 16px;
      }
      .container-eventos{
-         width: 85%;
+         width: 80%;
      }
      .eventos .semana-box{
         flex-direction: column;
     }
+    .eventos .eventos-title{
+        font-size: 22px;
+    }
      .eventos h3{
-         font-size: 3vh;
+         font-size:18px ;
      }
      .eventos .semana-box .semana-secion{
          width: 100%;
@@ -553,35 +580,27 @@ footer img{
      .eventos .semana-box .semana-secion img{
          width: 100%;
      }
-     footer h2{
-         font-size:4vh;
+     footer h3{
+         font-size:20px;
      }
      footer .descricao-footer p{
-         font-size:2.5vh;
+         font-size:14px;
      }
-     footer form{
-         gap: 2vh;
+     footer form .btn-enviar{      
+         border-radius:8px;
+         font-size: 14px;
      }
-     footer{
-        padding: 0 1vh 2vh 1vh;
-        margin-top:9vh;
+     footer form .email{       
+         font-size:14px;
+     }
+     footer .container-redes-sociais{
+        padding-bottom: 10px;
     }
-    .footer-container{
-        padding:4vh 5vw;
+    footer .container-redes-sociais p{
+        font-size: 12px;
     }
-     footer form .btn-enviar{
-         width:12vw;
-         padding:1.5vh 2vw;
-         border-radius:9px;
-         font-size: 2vh;
-     }
-     footer form .email{
-         padding:2vh 20px;
-         border-radius:9px;
-         font-size:2vh;
-     }
-    footer img{
-        display: none;
+    footer .container-redes-sociais a img{
+        width: 20px;
     }
 }
 
@@ -591,60 +610,69 @@ footer img{
 /* media para celulares */
 
 @media (max-width:500px){
+    #nav-bar{
+        width: 90%;
+    }
+    .logo img{
+        height: 45px;
+    }
     .menu{
         width: 80vw;   
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-        font-size:2vh;
-       
+        font-size:18px;     
     }
     .menu .container-menu .login{
-        padding: 3px 60px;
+        padding: 3px 45px;
         background-color: #0C0C0C;
         color: #ffff;
-        border-radius: 90px;
+        border-radius:20px;
     }
-    .container-futuro .descricao{      
-       width: 100%;
-       justify-content: center;
+    .container-futuro-descricao{
+        width: 90%; 
     }
-    .container-futuro .descricao h2{
-        font-size: 5vh;
+    .container-futuro .descricao h1{
+        font-size:35px;
     }
     .container-futuro .descricao p{
-        font-size: 2vh;
+        font-size: 16px;
     }
     .container-futuro .descricao .comecar{
-        padding: 10px 40px; 
-        border-radius: 8px;
-        font-size: 2vh;
+        font-size:14px;
     }
     .section-container-valores{
         border-radius:20px;
         width: 90%;
     }
     section .titulos h3{
-        font-size:2.5vh;
+        font-size:18px;
     }
     section .titulos h2{
-        font-size: 3.5vh;
+        font-size: 22px;
     }
     section .container-valores{
         width: 90%;
     }
+    section .container-valores .coluna-valores{
+        width:90%;
+        margin: 0 auto;
+     }
     section .container-valores .coluna-valores h3{
-        font-size: 3vh;
+        font-size:18px ;
     }
     section .container-valores .coluna-valores h3 img{
-        width: 3vw;
+        width: 16px;
     }
     section .container-valores .coluna-valores .descricao-valores p{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 25px;
     }
     .container-opiniao{
         display:none;
+    }
+    .container-eventos{
+        width: 90%;
     }
     .eventos{
         margin-top: 34px;
@@ -655,33 +683,40 @@ footer img{
     .eventos .semana-box .semana-secion{
         width: 100%;
     }
-    footer{
-        padding: 0 1vh 1vh 1vh;
+    .eventos .eventos-title{
+        font-size: 22px;
     }
-    footer .descricao-footer h2{
-        font-size: 25px;
+    .eventos h3{
+        font-size: 18px;
+    }
+    footer .descricao-footer h3{
+        font-size: 22px;
     }
     footer .descricao-footer p{
-        font-size: 14px;
+        font-size: 16px;
        
     }
     footer form .email{
-        padding:14px 20px ;
+        padding:12px 10px ;
         font-size: 10px;
         border-radius:8px;
+        font-size: 14px;
+    }
+    footer form .email::placeholder{
+        font-size: 14px;
     }
     footer form{
         gap: 15px;
     }
     footer form .btn-enviar{
-        width:100px;
-        padding:8px 15px;
         font-size: 14px;
-        border-radius: 5px;
+        border-radius: 7px;
     }
-    footer img{
-        display: none;
-        justify-content: center;
+    footer .container-redes-sociais p{
+        color:#444343;
+    }
+    footer .container-redes-sociais a img{
+        width: 30px;
     }
 }
 
