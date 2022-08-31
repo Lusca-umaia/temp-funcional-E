@@ -19,8 +19,7 @@ body{
 }
 
 .header-container{
-    background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-bottom: 3px solid #000000;
+    background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%);
     display:flex;
     flex-direction: column;   
 }
@@ -100,6 +99,7 @@ body{
     align-items: flex-start;
     justify-content:center;
     padding:70px 0;
+    border-bottom: 3px solid #000000;
 }
 .container-futuro-descricao{
     width: 1100px;
@@ -339,7 +339,7 @@ footer .container-redes-sociais a img:hover{
 }
  /* media para telas menores de notebook */
 
- @media (max-width:1024px){
+ @media (max-width:1100px){
     #nav-bar{
         width:90%;
     }
@@ -462,6 +462,9 @@ footer .container-redes-sociais a img:hover{
         height: 60px; 
         width: 80%;      
     }
+    .logo img{
+        height: 45px;
+    }
     nav.active .menu{
         display: block;        
     }
@@ -528,6 +531,11 @@ footer .container-redes-sociais a img:hover{
      .container-futuro .descricao p{
         font-size: 16px;
      }
+     .container-itens-projetos{
+        display: flex;
+        flex-direction:column;
+        
+     }
      .container-futuro .descricao .comecar{
          font-size: 16px;
          border-radius: 10px;
@@ -572,7 +580,7 @@ footer .container-redes-sociais a img:hover{
         font-size: 22px;
     }
      .eventos h3{
-         font-size:18px ;
+         font-size:18px;
      }
      .eventos .semana-box .semana-secion{
          width: 100%;
@@ -603,9 +611,6 @@ footer .container-redes-sociais a img:hover{
         width: 20px;
     }
 }
-
- 
-
 
 /* media para celulares */
 

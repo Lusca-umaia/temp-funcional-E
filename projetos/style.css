@@ -15,10 +15,13 @@ font-family: 'Montserrat Alternates', sans-serif;
 body{
     background-color:#FAFAFA;
 }
+/* Header e navbar inicio */
 .header-container{
-    border-bottom: 3px solid #000000;
     display:flex;
-    flex-direction: column;   
+    flex-direction: column;
+    align-items: center; 
+    background-color:#fafafa;
+    border-bottom: 3px solid #000000;
 }
 .header-container-nav{
     width: 100%;
@@ -32,15 +35,15 @@ body{
     align-items: center; 
 }
 #nav-bar{
-    height: 11.5vh;
-    width: 80%;
+    width: 1100px;
+    height: 75px;
     display:flex;
     justify-content: space-between;
     align-items: center; 
     background-color:#fafafa;
 }
 .logo img{
-    height: 5vh;
+    height:60px;
 }
 
 #nav-bar.active .menu{
@@ -64,11 +67,11 @@ body{
 }
 .container-menu{
     display: flex;
-    gap: 2vw;
+    gap: 30px;
     
 }
 .item-menu{
-    font-size:3vh;
+    font-size:20px;
     font-family:'Reem Kufi', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 400;
@@ -79,17 +82,22 @@ body{
 }
 header .explore-nossos-projetos{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    height: 87vh;
-    padding: 0 0 0 40px;
-    background-color: #FFE49A;
+    margin-top: 77px;
+    padding-top:60px;
+    width:1100px;
+    height: 459px;
+}
+header .explore-nossos-projetos .container-comecar{
+    padding-bottom: 80px;
+    align-self: center;
 }
 header .explore-nossos-projetos .container-comecar h1{
     font-size:70px;
     font-family:'Montserrat', sans-serif;
     font-weight: 700;
-    margin-bottom: 54px;
+    margin-bottom:45px;
 }
 header .explore-nossos-projetos .container-comecar h1 .nossos{
     font-family: 'Montserrat Alternates', sans-serif;
@@ -98,14 +106,13 @@ header .explore-nossos-projetos .container-comecar h1 .nossos{
 }
 header .explore-nossos-projetos .container-comecar .comecar{
     color: #ffff;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif ;
     font-weight: 600;
     background-color: #0C0C0C;
-    border-radius: 14px;
-    padding: 13px 60px;
-    text-decoration: none;
-    
+    border-radius: 12px;
+    padding: 12px 55px;
+    text-decoration:none;   
 }
 header .explore-nossos-projetos .container-comecar img{
     display:none;
@@ -115,149 +122,237 @@ header .explore-nossos-projetos .container-comecar .comecar:hover{
 }
 
 header .explore-nossos-projetos .vetor-projetos{
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    width: 50%;
+    width:50%;  
 }
+
 header .explore-nossos-projetos .vetor-projetos img{
     width: 100%;
 }
+/* Header e navbar fim */
+
+
+/* inicio do conteudo principal */
 main{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.container-projetos .descricao{
-    margin:100px 0 55px 2.5vw;
+.container-projetos{
+    width: 1100px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+.container-projetos .descricao{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin:90px 0;
+}
 .container-projetos .descricao h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 .container-projetos .descricao p{
     font-size: 20px;
-    width: 60%;
 }
-.container-projetos{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+.container-projetos .projetos{
+  margin-bottom: 150px;
+}
+.container-projetos .reverse{
+    flex-direction: row-reverse;
 }
 .container-projetos .projetos .descricao-projeto{
-    width: 40vw;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 35px;
 }
-.container-projetos .projetos .descricao-projeto .tipo{
-    color:#F44618;
+.container-projetos .projetos .descricao-projeto .titulo-projeto{
+    line-height: 38px;
+}
+.container-projetos .projetos .descricao-projeto .titulo-projeto .tipo{
+    color:#000000;
     text-transform: uppercase;
     font-size: 25px;
 }
-.container-projetos .projetos .descricao-projeto h2{
-    font-size: 45px;
+.container-projetos .projetos .descricao-projeto .titulo-projeto h2{
+    font-size: 45px; 
 }
 .container-projetos .projetos .descricao-projeto p{
     font-size: 20px;
-    margin-bottom: 10vh;
+    color:#000000;
+    margin-bottom:30px ;
 }
 .container-projetos .projetos .descricao-projeto .saiba-mais{
-    padding: 10px 20px;
-    border: 4px solid #F44618;
+    padding: 8px 6px;
+    width:max-content;
+    border: 4px solid #000000;
     text-decoration: none;
     color: #000000;
     border-radius:20px;
     font-size: 20px;
+    text-align: center;
 }
 .container-projetos .projetos .descricao-projeto .saiba-mais:hover{
     opacity: 0.7;
 }
 .projetos{
     display:flex;
-    height: 70vh;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    align-items:center;
+    justify-content:space-between;
 }
 .projetos .container-img{
-    background-color:#FFE49A;
-    height: 60vh;
-    width: 40vw;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:30%;
+}
+.projetos .container-img img{
+    width:100%;
 }
 
+/* fim do conteudo principal */
+
+
+/* inicio do footer */
+
 footer{
-    margin-top: 150px;
-    background-color:#FFE49A;
-    padding:35px 100px 35px 100px;
+    background-color:#06B45F;
+    margin-top:100px; 
+}
+.footer-container{
     display: flex;
     justify-content: space-between;
+    border-radius:20px;
+    width: 1100px;
+    margin:0 auto;
+    padding-top:40px;
 }
-footer h2{
-    font-size:54px;
+footer h3{
+    font-size:30px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
 }
-footer .descricao-footer p{
-    font-size:30px;
+footer .descricao-footer p,footer p{
+    font-size:20px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
+}
+footer p{
+    font-size: 14px;
 }
 footer form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 footer form .btn-enviar{
-    width:111px;
-    padding:10px 15px;
+    width: 30%;
+    padding:5px 10px;
     border: 0;
     cursor: pointer;
-    border-radius:11px;
+    border-radius:9px;
     background-color: #ffff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 20px;
+}
+footer form .btn-enviar:hover{
+    opacity: 0.9;
 }
 footer form .email{
     border: 0;
     outline: none;
-    padding:20px 40px ;
+    padding:10px 10px;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius:11px;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
 }
+footer form .email::placeholder{
+    font-size: 16px;
+}
+footer .container-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+footer .container-redes-sociais p{
+    color:#444343;
+}
+footer .container-redes-sociais a img{
+    width: 30px;
+}
+footer .container-redes-sociais a img:hover{
+    transition:0.5s;
+    transform: translateX(0) scale(1.2);
+}
+
+/* fim do footer */
 
 
-@media (max-width:1300px){
+@media (max-width:1100px){
     #nav-bar{
-        padding: 0 35px 0 50px;
-    }
-    .logo img{
-        height: 40px;
-    }
-    .container-menu{
-        display: flex;
-        gap: 24px;
-        
+        width:90%;
     }
     .item-menu{
-        font-size: 20px;
+        font-size:18px;
+    }
+    .container-menu{
+        gap: 20px;
+    }
+    header .explore-nossos-projetos{
+        width: 90%;
+    }
+    .container-projetos{
+        width: 90%;
+    }
+    .footer-container{
+        width:90%;
+    }
+    footer h3{
+        font-size:25px;
+    }
+    footer .descricao-footer p{
+        font-size:16px;
+    }
+    footer form .btn-enviar{  
+        border-radius:9px;
+        font-size: 15px;
+    }
+    footer form .email{
+        border-radius:9px;
+        font-size:14px;
+    }
+    footer form .email::placeholder{
+        font-size: 14px;
+    }
+    footer .container-redes-sociais{
+        padding-bottom: 10px;
+    }
+    footer .container-redes-sociais p{
+        font-size: 14px;
+    }
+    footer .container-redes-sociais a img{
+        width: 20px;
     }
 }
 
 
-@media (max-width:900px){
+@media (max-width:850px){
     #nav-bar{
-        height: 9vh;
-        padding:0 21px 0 21px; 
-        background-color:#FFE49A;
+        height: 60px; 
+        width: 80%;
+        background-color:#06B45F;
     }
-    nav.off .menu{
-        display: none;
+    .header-container-nav{
+        background-color:#06B45F;
+    }
+    .header-container{
+        background-color:#06B45F;
     }
     nav.active .menu{
         display: block;       
@@ -275,11 +370,11 @@ footer form .email{
     .menu{
         display: none;
         position: absolute;
-        top: 9vh;
+        top:62px;
         right: 0;
         width: 60vw;
         opacity: 0.9;
-        background-color: #FFE49A;
+        background-color: #06B45F;
         z-index: 9999;
         animation: slide 0.5s ease-in-out;
        
@@ -306,24 +401,20 @@ footer form .email{
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-        font-size: 20px;
-      
+        font-size: 18px;     
     }
     .menu-hamburguer{
         display: flex;
     }
     .logo img{
-        height: 26px;
+        height: 45px;
     }
     header .explore-nossos-projetos{
         display: flex;
-        align-items:center;
-        justify-content:center;
         flex-direction: column;
-        height: 70vh;
         padding: 0;
-        background-color: #FFE49A;
-        border-bottom:2px solid #000000;
+        width: 80%;
+        height: 400px;
     }
     header .explore-nossos-projetos .container-comecar{
         display: flex;
@@ -334,12 +425,10 @@ footer form .email{
     header .explore-nossos-projetos .container-comecar h1{
         font-size:55px;
         text-align:center;
-        width: 80%;
     }
     header .explore-nossos-projetos .container-comecar .comecar{
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 10px;
-        padding: 10px 50px;
     }
     header .explore-nossos-projetos .container-comecar img{
         display:block;
@@ -351,88 +440,80 @@ footer form .email{
     .container-projetos{
         display: flex;
         flex-direction: column;
-        gap: 7vh;
     }
     .container-projetos .descricao{
         margin-top: 5vh;
     }
     .container-projetos .descricao h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     .container-projetos .descricao p{
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
         
+    }
+    .container-projetos .reverse{
+        flex-direction: column;
     }
     .container-projetos .projetos .descricao-projeto{
         width: 100%;
     }
-    .container-projetos .projetos .descricao-projeto .tipo{
-        color:#F44618;
-        text-transform: uppercase;
-        font-size: 18px;
+    .container-projetos .projetos .descricao-projeto .titulo-projeto .tipo{
+        font-size: 20px;
     }
-    .container-projetos .projetos .descricao-projeto h2{
-        font-size: 30px;
+    .container-projetos .projetos .descricao-projeto .titulo-projeto h2{
+        font-size: 25px;
     }
     .container-projetos .projetos .descricao-projeto p{
-        font-size: 18px;
-        margin-bottom: 5vh;
+        font-size: 17px;
+        margin-bottom: 0;
     }
     .container-projetos .projetos .descricao-projeto .saiba-mais{
-        padding: 5px 10px;
-        border: 3px solid #F44618;
+        width: max-content;
+        padding:5px 10px;
         border-radius:15px;
-        font-size: 20px;
+        font-size: 16px;
     }
     .projetos{
         display:flex;
-        height: auto;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-       
-    }
-    .container-reverse{ 
-        flex-direction: column-reverse;
+        flex-direction: column;     
     }
     .projetos .container-img{
-        height: 50vh;
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 5vh;
+        width:80%;
+        display:flex;
+        justify-content: center;
+        margin-bottom:30px ;
     }
     .projetos .container-img img{
-        height: 80%;
+        width:60%;
+        
     }
 
-    footer{
-        padding: 5% 15%;
-    }
-    footer .descricao-footer h2{
-        font-size: 30px;
+
+    footer h3{
+        font-size:20px;
     }
     footer .descricao-footer p{
-        font-size: 20px;     
+        font-size:14px;
     }
-    footer form .email{
-        padding:19px 20px ;
-        font-size: 15px;
+    footer form .btn-enviar{      
         border-radius:8px;
+        font-size: 14px;
     }
-    footer form{
-        gap: 20px;
+    footer form .email{       
+        font-size:14px;
     }
-    footer form .btn-enviar{
-        width:100px;
-        padding:10px 20px;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-    footer img{
-        display: none;
-
-    }
+    footer .container-redes-sociais{
+       padding-bottom: 10px;
+   }
+   footer .container-redes-sociais p{
+       font-size: 12px;
+   }
+   footer .container-redes-sociais a img{
+       width: 20px;
+   }
 }
 
 
@@ -440,83 +521,90 @@ footer form .email{
 
 @media (max-width:500px){
     #nav-bar{
-        height: 9vh;
-        padding:0 21px 0 21px; 
+        width: 90%;
     }
-    nav.off .menu{
-        display: none;
-    }
-    nav.active .menu{
-        display: block;       
+    .logo img{
+        height: 45px;
     }
     .menu{
-        display: none;
-        position: absolute;
-        top: 9vh;
-        right: 0;
         width: 80vw;   
-        background-color: #FFE49A;
-        z-index: 9999;
-        animation: slide 0.5s ease-in-out;
-        opacity: 0.9;
-    }
-    @keyframes slide {
-        from{
-          
-           transform: translateX(100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    .menu .container-menu{
-        display: flex;
-        flex-direction: column;
-        align-items:center; 
-        padding-top: 10px;
-        padding-bottom: 20px;  
-        width: 100%;
-        height: 100vh;
-        gap: 30px;
-        
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-        font-size: 18px;
+        font-size:18px;     
     }
-    .menu-hamburguer{
-        display: flex;
+    .header-container{
+        height:400px;
     }
-    .logo img{
-        height: 26px;
-       
+    header .explore-nossos-projetos .container-comecar{
+        width:100%;
     }
     header .explore-nossos-projetos .container-comecar h1{
         font-size:40px;
         text-align:center;
-        width: 90%;
     }
     header .explore-nossos-projetos .container-comecar .comecar{
         font-size: 16px;
-        padding: 10px 40px;
-       
+        padding: 10px 40px;    
         border-radius: 8px;
     }
     .container-projetos .descricao h2{
         font-size: 25px;
     }
     .container-projetos .descricao p{
-        font-size: 14px;
-       
+        font-size: 14px;    
     }
     .container-projetos .projetos .descricao-projeto h2{
         font-size: 25px;
     }
     .container-projetos .projetos .descricao-projeto p{
         font-size: 14px;
-        margin-bottom: 5vh;
     }
     .container-projetos .projetos .descricao-projeto .saiba-mais{
         font-size: 14px;
+    }
+    footer .descricao-footer h3{
+        font-size: 22px;
+    }
+    footer .descricao-footer p{
+        font-size: 16px;
+       
+    }
+    footer form .email{
+        padding:12px 10px ;
+        font-size: 10px;
+        border-radius:8px;
+        font-size: 14px;
+    }
+    footer form .email::placeholder{
+        font-size: 14px;
+    }
+    footer form{
+        gap: 15px;
+    }
+    footer form .btn-enviar{
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    footer .container-redes-sociais p{
+        color:#444343;
+    }
+    footer .container-redes-sociais a img{
+        width: 30px;
+    }
+}
+
+@media (max-width:380px){
+    header .explore-nossos-projetos .container-comecar h1{
+        font-size:30px;
+    }
+    header .explore-nossos-projetos{
+        width: 100%;
+        height: 380px;
+    }
+    header .explore-nossos-projetos .container-comecar .comecar{
+        font-size: 14px;
+        padding: 8px 35px; 
+
     }
 }
