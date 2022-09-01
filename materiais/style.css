@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Poppins&family=Reem+Kufi&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Reem Kufi', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FAFAFA;
+}
+
+.header-container-nav{
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    background-color:#FAFAFA;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+#nav-bar{ 
+    height: 75px;
+    width: 1100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.logo img{
+    height: 60px;
+}
+#nav-bar.active .menu{
+    display: block;
+    
+}
+.menu-hamburguer{
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    cursor: pointer;
+   
+}
+.menu-hamburguer .linha{
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.container-menu{
+    display: flex;
+    gap: 2vw;
+    
+}
+.item-menu{
+    font-size:20px;
+    font-family:'Reem Kufi', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.item-menu:hover{
+    color: #423d3d;
+}
+.box-main {
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 6%;
+    justify-content: center;
+    width: 100%;
+    background-image: url(/img/box-main.svg);
+    background-color: red;
+}
+.box-text {
+    margin-top: 11.5vh;
+}
+.box-1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-size: 100px;
+}
+.box-2 {
+    font-size: 3vh;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.box-flut {
+    width: 100px;
+    transform: rotate(-10deg);
+    text-align: center;
+    background-color: #35AB7B;
+}
+.box-pai {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.box-princ {
+    margin-top: 50px;
+    gap: 2vh;
+    width: 80%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.box-princ2 {
+    margin-top: 50px;
+    gap: 2vh;
+    width: 80%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    width: 100%;
+}
+.box-princ > h1 {
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.box-flut > h1{
+    transform: rotate(10deg);  
+    font-family: Montserrat;
+}
+.box-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    width: 100%;
+}
+.box-vert {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://img.freepik.com/vetores-premium/papel-de-parede-de-paisagem-minimalista-do-por-do-sol-da-montanha-full-hd-4k-8k-imagens-de-fundo_538866-33.jpg?w=2000");
+    
+}
+
+.box-vert2 {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+.box-vert-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-vert-img2 > img{
+    width: 240px;
+}
+.box-vert-img > img{
+    width: 300px;
+}
+
+.box-vert-img2 > h1{
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    font-family: Montserrat;
+}
+.box-vert3 {
+    width:100vw;
+    background-size: cover;
+    height: 40vh;
+    background-image: url(/img/pasta.svg);
+}
+.box-cont2 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-cont3 {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.position-boxs {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-mod > h1 {
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.box-footer {
+    height: 100px;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.footer-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: center;
+    font-size: 17px;
+}
+.footer-rs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-rs > img {
+    height: 30px;
+}
+@media (max-width:1100px){
+
+    #nav-bar{
+        width:90%;
+    }
+    .item-menu{
+        font-size:18px;
+    }
+    .container-menu{
+        gap: 20px;
+    }
+    .container-menu .login{
+        padding: 0.3vh 3vw;
+        border-radius: 90px;
+    }
+    .box-1 {
+        font-size: 90px;
+    }
+    .box-2 {
+        font-size: 30px;
+    }
+    .box-main {
+        height: 500px;
+    }
+    .box-cont {
+    flex-direction: column;
+    }   
+    .box-vert {
+        width: 90%;
+    }
+    .text-mod > h1 {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .box-vert-img > img{
+        width: 250px;
+    }
+    .box-vert-img2 {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-vert-img2 > img{
+        width: 90%;
+    }
+    .box-vert-img2 > h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .box-cont3 {
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-width:900px){
+    #nav-bar{
+        height: 60px; 
+        width: 80%;      
+    }
+    .logo img{
+        height: 45px;
+    }
+    nav.active .menu{
+        display: block;        
+    }
+    nav.active .menu-hamburguer .linha2{
+        display: none;
+    }
+    nav.active .menu-hamburguer .linha1{
+        transform: rotate(140deg);
+        position: absolute;     
+    }
+    nav.active .menu-hamburguer .linha3{
+        transform: rotate(-140deg);
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top:calc(60px + 2px);
+        right: 0;
+        width: 60vw;
+        background: #FAFAFA;
+        z-index: 9999;
+        animation: slide 0.5s ease-in-out;
+    }
+    .box-1 > h3 {
+        font-size: 70px;
+    }
+    .box-2 {
+        font-size: 17px;
+    }
+    .box-main {
+        height: 400px;
+    }
+    .box-cont3 {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .box-vert {
+        height: 200px;
+    }
+    .box-vert-img2 {
+        width: 80%;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-vert-img2 > img{
+        width: 90%;
+    }
+    .box-vert-img {
+        display: none;
+    }
+    .box-vert2 {
+        width: 100%;
+        height: auto;
+    }
+    .text-mod > h1{
+        text-align: justify;
+        font-size: 25px;
+    }
+    .box-vert-img2 > h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .box-1 {
+        font-size: 70px;
+    }
+    .footer-text {
+        font-size: 10px;
+    }
+    .box-cont3 {
+        margin-bottom: 0px;
+    }
+    @keyframes slide {
+        from{
+          
+           transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .menu .container-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        padding-top: 10px;
+        padding-bottom: 20px; 
+        background: #FAFAFA; 
+        width: 100%;
+        height: 100vh;
+        gap: 35px;
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem; 
+        font-size: 16px;
+        color: #0C0C0C;   
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+}
+
+@media (max-width:500px){
+    #nav-bar{
+        width: 90%;
+    }
+    .logo img{
+        height: 45px;
+    }
+    .menu{
+        width: 80vw;   
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem;
+        font-size:18px;     
+    }
+
+    .box-vert2 {
+        width: 100%;
+        height: auto;
+    }
+    .text-mod > h1{
+        text-align: justify;
+        font-size: 23px;
+    }
+    .box-1 > h3 {
+        font-size: 45px;
+    }
+    .box-2 {
+        font-size: 14px;
+    }
+    .box-main {
+        height: 330px;
+    }
+    .text-mod > h1{
+        text-align: justify;
+        font-size: 18px;
+    }
+    .box-vert {
+        width: 100%;
+        height: 200px;
+    }
+    .box-vert-img2 > h1 {
+        font-size: 14px;
+    }
+    .box-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer-text {
+        font-size:;
+    }
+    .footer-rs > img {
+        height: 25px;
+    }
+
+    .box-cont3 {
+        margin-bottom: 0px;
+    }
+}
