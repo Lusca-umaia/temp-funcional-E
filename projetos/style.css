@@ -82,16 +82,15 @@ body{
 }
 header .explore-nossos-projetos{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     margin-top: 77px;
-    padding-top:60px;
+    padding:60px 0;
     width:1100px;
     height: 459px;
 }
 header .explore-nossos-projetos .container-comecar{
     padding-bottom: 80px;
-    align-self: center;
 }
 header .explore-nossos-projetos .container-comecar h1{
     font-size:70px;
@@ -122,7 +121,7 @@ header .explore-nossos-projetos .container-comecar .comecar:hover{
 }
 
 header .explore-nossos-projetos .vetor-projetos{
-    width:50%;  
+    width:40%;  
 }
 
 header .explore-nossos-projetos .vetor-projetos img{
@@ -171,7 +170,7 @@ main{
     line-height: 38px;
 }
 .container-projetos .projetos .descricao-projeto .titulo-projeto .tipo{
-    color:#000000;
+    color:#F6851C;
     text-transform: uppercase;
     font-size: 25px;
 }
@@ -184,7 +183,7 @@ main{
     margin-bottom:30px ;
 }
 .container-projetos .projetos .descricao-projeto .saiba-mais{
-    padding: 8px 6px;
+    padding: 8px 12px;
     width:max-content;
     border: 4px solid #000000;
     text-decoration: none;
@@ -214,79 +213,28 @@ main{
 /* inicio do footer */
 
 footer{
-    background-color:#06B45F;
-    margin-top:100px; 
+    border-top: 1px solid #000000;
 }
-.footer-container{
+footer .container-conteudo-footer{ 
+    height: 70px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
-    border-radius:20px;
-    width: 1100px;
-    margin:0 auto;
-    padding-top:40px;
-}
-footer h3{
-    font-size:30px;
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 600;
-}
-footer .descricao-footer p,footer p{
-    font-size:20px;
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 400;
-}
-footer p{
-    font-size: 14px;
-}
-footer form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-footer form .btn-enviar{
-    width: 30%;
-    padding:5px 10px;
-    border: 0;
-    cursor: pointer;
-    border-radius:9px;
-    background-color: #ffff;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif; 
-    margin-bottom: 20px;
-}
-footer form .btn-enviar:hover{
-    opacity: 0.9;
-}
-footer form .email{
-    border: 0;
-    outline: none;
-    padding:10px 10px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius:11px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif; 
-}
-footer form .email::placeholder{
-    font-size: 16px;
-}
-footer .container-redes-sociais{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
+    width: 1100px;
+    margin: 0 auto;
 }
-footer .container-redes-sociais p{
-    color:#444343;
+footer .container-conteudo-footer .copyrigth p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'montserrat',sans-serif;
 }
-footer .container-redes-sociais a img{
-    width: 30px;
+footer .container-conteudo-footer .icones-redes img{
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
 }
-footer .container-redes-sociais a img:hover{
+footer .container-conteudo-footer .icones-redes img:hover{
     transition:0.5s;
     transform: translateX(0) scale(1.2);
 }
@@ -310,34 +258,11 @@ footer .container-redes-sociais a img:hover{
     .container-projetos{
         width: 90%;
     }
-    .footer-container{
-        width:90%;
+    footer .container-conteudo-footer{
+        width: 100%;
     }
-    footer h3{
-        font-size:25px;
-    }
-    footer .descricao-footer p{
-        font-size:16px;
-    }
-    footer form .btn-enviar{  
-        border-radius:9px;
-        font-size: 15px;
-    }
-    footer form .email{
-        border-radius:9px;
-        font-size:14px;
-    }
-    footer form .email::placeholder{
-        font-size: 14px;
-    }
-    footer .container-redes-sociais{
-        padding-bottom: 10px;
-    }
-    footer .container-redes-sociais p{
-        font-size: 14px;
-    }
-    footer .container-redes-sociais a img{
-        width: 20px;
+    footer .container-conteudo-footer .copyrigth p{
+        font-size: 16px;
     }
 }
 
@@ -346,13 +271,13 @@ footer .container-redes-sociais a img:hover{
     #nav-bar{
         height: 60px; 
         width: 80%;
-        background-color:#06B45F;
+        background-color:#35AB7B;
     }
     .header-container-nav{
-        background-color:#06B45F;
+        background-color:#35AB7B;
     }
     .header-container{
-        background-color:#06B45F;
+        background-color:#35AB7B;
     }
     nav.active .menu{
         display: block;       
@@ -373,7 +298,6 @@ footer .container-redes-sociais a img:hover{
         top:62px;
         right: 0;
         width: 60vw;
-        opacity: 0.9;
         background-color: #06B45F;
         z-index: 9999;
         animation: slide 0.5s ease-in-out;
@@ -492,28 +416,13 @@ footer .container-redes-sociais a img:hover{
     }
 
 
-    footer h3{
-        font-size:20px;
+    footer .container-conteudo-footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
-    footer .descricao-footer p{
-        font-size:14px;
-    }
-    footer form .btn-enviar{      
-        border-radius:8px;
-        font-size: 14px;
-    }
-    footer form .email{       
-        font-size:14px;
-    }
-    footer .container-redes-sociais{
-       padding-bottom: 10px;
-   }
-   footer .container-redes-sociais p{
-       font-size: 12px;
-   }
-   footer .container-redes-sociais a img{
-       width: 20px;
-   }
 }
 
 
@@ -563,34 +472,8 @@ footer .container-redes-sociais a img:hover{
     .container-projetos .projetos .descricao-projeto .saiba-mais{
         font-size: 14px;
     }
-    footer .descricao-footer h3{
-        font-size: 22px;
-    }
-    footer .descricao-footer p{
-        font-size: 16px;
-       
-    }
-    footer form .email{
-        padding:12px 10px ;
+    footer .container-conteudo-footer .copyrigth p{
         font-size: 10px;
-        border-radius:8px;
-        font-size: 14px;
-    }
-    footer form .email::placeholder{
-        font-size: 14px;
-    }
-    footer form{
-        gap: 15px;
-    }
-    footer form .btn-enviar{
-        font-size: 14px;
-        border-radius: 7px;
-    }
-    footer .container-redes-sociais p{
-        color:#444343;
-    }
-    footer .container-redes-sociais a img{
-        width: 30px;
     }
 }
 
