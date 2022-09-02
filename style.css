@@ -328,10 +328,11 @@ footer .container-redes-sociais{
     padding-bottom: 20px;
 }
 footer .container-redes-sociais p{
-    color:#444343;
+    color:#1d1b1b;
 }
 footer .container-redes-sociais a img{
-    width: 30px;
+    height: 25px;
+    margin-left: 10px;
 }
 footer .container-redes-sociais a img:hover{
     transition:0.5s;
