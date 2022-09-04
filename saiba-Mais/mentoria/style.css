@@ -412,6 +412,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     section .title p{
         width: 100%;
         text-align: justify;
+        font-size: 14px;
     }
     section .container-gestao-2022{
         grid-template-columns: 1fr; 
@@ -420,8 +421,16 @@ footer .container-conteudo-footer .icones-redes img:hover{
     section .container-gestao-2022 .pessoas-gestao{
         width: 100%;
     }
-
-
+    main .quem-somos .quem-somos-descricao{
+        width:100%;
+        padding: 0 10px;
+        gap: 30px;
+    }
+    main .quem-somos .quem-somos-descricao p{
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+    }
 
     footer .container-conteudo-footer .copyrigth p{
         font-size: 10px;

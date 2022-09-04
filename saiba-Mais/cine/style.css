@@ -447,7 +447,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
         font-size: 45px;
     }
     .container-cine-descricao .descricao p{
-        width: 100%;
+        width: 90%;
     }
     section .container-gestao-2022{
         grid-template-columns: 1fr 1fr;

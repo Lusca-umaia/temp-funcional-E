@@ -206,6 +206,7 @@ section .container-propostas .propostas-conteudo .conteudo-descricao h1{
     font-size: 80px;
     font-weight: 700;
     line-height: 80px;
+    width: 60%;
 }
 section .container-propostas .propostas-conteudo .conteudo-descricao span{
     font-style: italic;
@@ -477,12 +478,12 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 90%;
     }
     .container-apresentacao-escola{
-        margin-top: 62px;
+        margin-top: 72px;
         margin-bottom: 100px;
-        padding-top: 10px;
+        padding-top: 30px;
     }
     .container-apresentacao-escola .container-conteudo .container-descricao{
-        width: 60%;
+        width: 100%;
     }
     .container-apresentacao-escola .container-conteudo .container-descricao h2{
         font-size: 40px;
@@ -494,6 +495,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 40%;
         display: flex;
         justify-content: center;
+        display: none;
     }
     .container-apresentacao-escola .container-conteudo .container-img-vetor img{
         height: 400px;
@@ -601,16 +603,21 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 100%;
     }
     .container-apresentacao-escola .container-conteudo .container-descricao h2{
-        font-size: 35px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao p{
+        text-align: justify;
+        margin-top:10px ;
     }
     .container-apresentacao-escola .container-conteudo .container-img-vetor{
         display:none;
     }
     section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h4{
-        font-size: 28px;
+        font-size: 25px;
     }
     section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     section .container-nosso-jeito .container-jeito-conteudo p{
         font-size: 14px;
@@ -623,15 +630,15 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 100%;
     }
     section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title h3{
-        font-size: 30px;
+        font-size: 25px;
     }
     section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title p{
         font-size: 16px;
     }
     section .container-propostas .propostas-conteudo .conteudo-descricao h1{
-        font-size: 40px;
+        font-size: 35px;
         line-height: 50px;
-        text-align: left;
+        text-align: justify;
     }
     section .container-propostas .propostas-conteudo{
         gap: 50px;
@@ -670,7 +677,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 100%;
     }
     section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora p{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 30px;
     }
     section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora h6{
@@ -678,16 +685,24 @@ footer .container-conteudo-footer .icones-redes img:hover{
         align-self: flex-end;
     }
     section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h4{
-        font-size:28px;
+        font-size:25px;
     }
     section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     footer .container-conteudo-footer .copyrigth p{
         font-size: 10px;
     }
     footer .container-conteudo-footer{
         flex-direction: column-reverse;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos{
+        flex-direction: column;
+        gap: 30px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos img{
+        width: 90%;
+        margin:0 auto;
     }
 
 }
