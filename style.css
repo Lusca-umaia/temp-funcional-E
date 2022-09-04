@@ -460,11 +460,11 @@ footer .container-redes-sociais a img:hover{
 
 @media (max-width:900px){
     #nav-bar{
-        height: 60px; 
-        width: 80%;      
+        height: 70px; 
+        width: 90%;      
     }
     .logo img{
-        height: 45px;
+        height:50px;
     }
     nav.active .menu{
         display: block;        
@@ -482,7 +482,7 @@ footer .container-redes-sociais a img:hover{
     .menu{
         display: none;
         position: absolute;
-        top:calc(60px + 2px);
+        top:72px;
         right: 0;
         width: 60vw;
         background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -511,7 +511,7 @@ footer .container-redes-sociais a img:hover{
     }
     .menu .container-menu .item-menu{
         padding: 1rem; 
-        font-size: 16px;
+        font-size: 20px;
         color: #0C0C0C;   
     }
     .menu .container-menu .login{

@@ -296,11 +296,11 @@ footer .container-conteudo-footer .icones-redes img:hover{
 
 @media (max-width:900px){
     #nav-bar{
-        height: 60px; 
-        width: 80%;      
+        height: 70px; 
+        width: 90%;      
     }
     .logo img{
-        height: 45px;
+        height: 50px;
     }
     nav.active .menu{
         display: block;        
@@ -318,7 +318,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .menu{
         display: none;
         position: absolute;
-        top:calc(60px + 2px);
+        top:72px;
         right: 0;
         width: 60vw;
         background:#fff;
@@ -346,7 +346,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     .menu .container-menu .item-menu{
         padding: 1rem; 
-        font-size: 16px;
+        font-size: 20px;
         color: #0C0C0C;   
     }
     .menu-hamburguer{
@@ -434,6 +434,8 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     .container-cine-descricao{
         padding: 20px 0;
+        gap: 40px;
+
     }
     .container-cine-descricao .container-img-vetorCine{
         display: none;
@@ -448,8 +450,8 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 100%;
     }
     section .container-gestao-2022{
-        grid-template-columns: 1fr;
-        grid-template-rows:6fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
         row-gap: 100px;
     }
     section .container-gestao-2022 .pessoas-gestao{
@@ -465,6 +467,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     main .quem-somos .quem-somos-descricao{
         width:100%;
         padding: 0 10px;
+        gap: 30px;
     }
     main .quem-somos .quem-somos-descricao p{
         line-height: 30px;

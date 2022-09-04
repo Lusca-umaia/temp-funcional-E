@@ -93,9 +93,9 @@ header .explore-nossos-projetos .container-comecar{
     padding-bottom: 80px;
 }
 header .explore-nossos-projetos .container-comecar h1{
-    font-size:70px;
-    font-family:'Montserrat', sans-serif;
+    font-size: 70px;
     font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
     margin-bottom:45px;
 }
 header .explore-nossos-projetos .container-comecar h1 .nossos{
@@ -113,9 +113,7 @@ header .explore-nossos-projetos .container-comecar .comecar{
     padding: 12px 55px;
     text-decoration:none;   
 }
-header .explore-nossos-projetos .container-comecar img{
-    display:none;
-}
+
 header .explore-nossos-projetos .container-comecar .comecar:hover{
     background-color:#423d3d;
 }
@@ -125,7 +123,7 @@ header .explore-nossos-projetos .vetor-projetos{
 }
 
 header .explore-nossos-projetos .vetor-projetos img{
-    width: 100%;
+    width: 90%;
 }
 /* Header e navbar fim */
 
@@ -272,15 +270,11 @@ footer .container-conteudo-footer .icones-redes img:hover{
 
 @media (max-width:850px){
     #nav-bar{
-        height: 60px; 
-        width: 80%;
-        background-color:#35AB7B;
+        height: 70px; 
+        width: 90%;
     }
     .header-container-nav{
-        background-color:#35AB7B;
-    }
-    .header-container{
-        background-color:#35AB7B;
+        background-color:#ffffff;
     }
     nav.active .menu{
         display: block;       
@@ -298,10 +292,10 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .menu{
         display: none;
         position: absolute;
-        top:62px;
+        top:72px;
         right: 0;
         width: 60vw;
-        background-color: #06B45F;
+        background-color: #fafafa;
         z-index: 9999;
         animation: slide 0.5s ease-in-out;
        
@@ -328,41 +322,39 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     .menu .container-menu .item-menu{
         padding: 1rem;
-        font-size: 18px;     
+        font-size: 20px;     
     }
     .menu-hamburguer{
         display: flex;
     }
     .logo img{
-        height: 45px;
+        height: 50px;
     }
     header .explore-nossos-projetos{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        width: 80%;
+        justify-content: space-between;
+        width: 90%;
         height: 400px;
     }
     header .explore-nossos-projetos .container-comecar{
         display: flex;
-        align-items:center;
-        justify-content:center;
+        align-items:flex-start;
+        justify-content:end;
         flex-direction: column;
+        width: 60%;
+        align-self:flex-start ;
+    }
+    header .explore-nossos-projetos .vetor-projetos{
+        width: 40%;
+    }
+    header .explore-nossos-projetos .vetor-projetos img{
+        width: 100%;
     }
     header .explore-nossos-projetos .container-comecar h1{
-        font-size:55px;
-        text-align:center;
+        font-size:50px;
     }
     header .explore-nossos-projetos .container-comecar .comecar{
         font-size: 16px;
         border-radius: 10px;
-    }
-    header .explore-nossos-projetos .container-comecar img{
-        display:block;
-        height: 40px;
-    }
-    header .explore-nossos-projetos .vetor-projetos{
-        display: none;
     }
     .container-projetos{
         display: flex;
@@ -398,7 +390,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .container-projetos .projetos .descricao-projeto .saiba-mais{
         width: max-content;
         padding:5px 10px;
-        border-radius:15px;
+        border-radius:10px;
         font-size: 16px;
     }
     .projetos{
@@ -450,15 +442,21 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     header .explore-nossos-projetos .container-comecar{
         width:100%;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
     }
     header .explore-nossos-projetos .container-comecar h1{
         font-size:40px;
-        text-align:center;
+        text-align: center;
     }
     header .explore-nossos-projetos .container-comecar .comecar{
         font-size: 16px;
         padding: 10px 40px;    
         border-radius: 8px;
+    }
+    header .explore-nossos-projetos .vetor-projetos{
+        display:none;
     }
     .container-projetos .descricao h2{
         font-size: 25px;
@@ -471,6 +469,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     .container-projetos .projetos .descricao-projeto p{
         font-size: 14px;
+        text-align: justify;
     }
     .container-projetos .projetos .descricao-projeto .saiba-mais{
         font-size: 14px;
