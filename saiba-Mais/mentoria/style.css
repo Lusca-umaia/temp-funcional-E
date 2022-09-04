@@ -241,11 +241,6 @@ footer .container-conteudo-footer .icones-redes img:hover{
 }
 
 
-
-
-
-
-
  @media (max-width:1100px){
     #nav-bar{
         width:90%;
@@ -263,6 +258,18 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     footer .container-conteudo-footer .copyrigth p{
         font-size: 16px;
+    }
+    .container-cine-descricao{
+        width: 90%;
+    }
+    main .quem-somos{
+        width: 90%;
+    }
+    section .title{
+        width:90%;
+    }
+    section .container-gestao-2022{
+        width: 90%;
     }
 }
 
@@ -325,7 +332,44 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .menu-hamburguer{
         display: flex;
     }
-
+    .container-cine-descricao .descricao{
+        width: 70%;
+    }
+    .container-cine-descricao .descricao h1{
+        font-size: 60px;
+    }
+    .container-cine-descricao .descricao p{
+        font-size: 16px;
+        line-height: 30px;
+        width: 75%;
+    }
+    .container-cine-descricao .container-img-vetorCine{
+        width: 30%;
+        align-self:center ;
+    }
+    .container-cine-descricao .descricao a{
+        font-size: 16px;
+    }
+    main .quem-somos{
+      padding: 20px 0 30px 0;
+    }
+    main .quem-somos .quem-somos-descricao{
+        gap: 10px;
+        width: 90%;
+    }
+    main .quem-somos .quem-somos-descricao h2{
+        font-size: 25px;
+    }
+    main .quem-somos .quem-somos-descricao p{
+        font-size: 16px;
+        
+    }
+    section .container-gestao-2022{
+        gap: 60px 50px;       
+    }
+    section .title h3{
+        font-size: 30px;
+    }
 
 
     footer .container-conteudo-footer{
@@ -351,7 +395,31 @@ footer .container-conteudo-footer .icones-redes img:hover{
         padding: 1rem;
         font-size:18px;     
     }
+    .container-cine-descricao{
+        padding: 20px 0;
+        gap: 40px;
 
+    }
+    .container-cine-descricao .container-img-vetorCine{
+        display: none;
+    }
+    .container-cine-descricao .descricao{
+        width: 100%;
+    }
+    .container-cine-descricao .descricao h1{
+        font-size: 50px;
+    }
+    section .title p{
+        width: 100%;
+        text-align: justify;
+    }
+    section .container-gestao-2022{
+        grid-template-columns: 1fr; 
+        width: 80%;     
+    }
+    section .container-gestao-2022 .pessoas-gestao{
+        width: 100%;
+    }
 
 
 

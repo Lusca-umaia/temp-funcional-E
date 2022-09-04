@@ -650,6 +650,7 @@ footer .container-redes-sociais a img:hover{
     .section-container-valores{
         border-radius:20px;
         width: 90%;
+        padding: 60px 40px;
     }
     section .titulos h3{
         font-size:18px;
@@ -658,10 +659,10 @@ footer .container-redes-sociais a img:hover{
         font-size: 22px;
     }
     section .container-valores{
-        width: 90%;
+        width: 100%;
     }
     section .container-valores .coluna-valores{
-        width:90%;
+        width:100%;
         margin: 0 auto;
      }
     section .container-valores .coluna-valores h3{
@@ -673,6 +674,7 @@ footer .container-redes-sociais a img:hover{
     section .container-valores .coluna-valores .descricao-valores p{
         font-size: 15px;
         line-height: 25px;
+        text-align: justify;
     }
     .container-opiniao{
         display:none;
