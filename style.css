@@ -338,6 +338,64 @@ footer .container-redes-sociais a img:hover{
     transition:0.5s;
     transform: translateX(0) scale(1.2);
 }
+.container-curso {
+    width: 100%;
+    display: flex;
+    margin-bottom: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cursos-text {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.box-curso {
+    transition-duration: 0.5s;
+}
+.box-curso:hover {
+    transition-duration: 0.5s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.cursos-text > p {
+    font-family: Montserrat Alternates;
+    font-size: 37px;
+    font-weight: 500;
+}
+.cursos-text > h3 {
+    font-family: Montserrat Alternates;
+    font-size: 72px;
+    font-weight: 600;
+}
+.cursos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-curso {
+    width: 23%;
+    background-color: #FFFFFF;
+    height: 400px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box-curso > img {
+    width: 220px;
+    height: 200px;
+}
+.box-curso {
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 20px;
+}
  /* media para telas menores de notebook */
 
  @media (max-width:1100px){
@@ -346,6 +404,13 @@ footer .container-redes-sociais a img:hover{
     }
     .item-menu{
         font-size:18px;
+    }
+    .box-curso > img {
+        width: 180px;
+        height: 160px;
+    }
+    .box-curso {
+        height: 300px;
     }
     .container-menu{
         gap: 20px;
@@ -462,6 +527,21 @@ footer .container-redes-sociais a img:hover{
     #nav-bar{
         height: 70px; 
         width: 90%;      
+    }
+    .cursos {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box-curso {
+        width: 80%;
+        height: 500px;
+    }
+    .box-curso > img {
+        width: 400px;
+        height: 300px;
+    }
+    .box-curso > p {
+        font-size: 30px;
     }
     .logo img{
         height:50px;
@@ -621,6 +701,23 @@ footer .container-redes-sociais a img:hover{
     }
     .logo img{
         height: 45px;
+    }
+    .box-curso > p {
+        font-size: 23px;
+    }
+    .box-curso {
+        width: 90%;
+        height: 330px;
+    }
+    .curso {
+        gap: 30px;
+    }
+    .box-curso > img {
+        width: 70%;
+        height: 200px;
+    }
+    .cursos-text > h3 {
+        font-size: 55px;
     }
     .menu{
         width: 80vw;   
