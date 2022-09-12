@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Poppins&family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Reem Kufi', sans-serif;
@@ -186,9 +187,66 @@ body{
 .box-cont2 {
     display: flex;
     height: 200px;
+    text-align: justify;
     align-items: center;
     justify-content: space-between;
 }
+.cont-multimeios {
+    width: 80%;
+    border-radius: 20px;
+    height: 200px;
+    background-image: url('/img/Group\ 45.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-multiomeios-left {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.box-multiomeios-left > p {
+    margin-left: 40px;
+    font-weight: 600;
+    font-family: 'Sora';
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.botoes {
+    margin-left: 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.position-multi {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoes > button {
+    padding: 8px;
+    color: #35AB7B;
+    font-weight: 600;
+    width: 200px;
+    border-radius: 10px;
+    border-style: none;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+.box-multiomeios-right {
+    display: flex;
+    width: 50%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 
 .box-cont3 {
     display: flex;
@@ -304,6 +362,36 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .logo img{
         height: 50px;
     }
+    #textt {
+        font-size: 14px;
+    }
+    .box-multiomeios-right {
+        display: none;
+    }
+    .botoes {
+        margin-left: 0;
+    }
+    .cont-multimeios {
+        width: 95%;
+    }
+    .box-multiomeios-left > p {
+        margin-left: 0px;
+    }
+    .box-multiomeios-left {
+        text-align: center;
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .box-cont2 {
+        display: flex;
+        height: 200px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     nav.active .menu{
         display: block;        
     }
@@ -417,8 +505,25 @@ footer .container-conteudo-footer .icones-redes img:hover{
     #nav-bar{
         width: 90%;
     }
+    #textt {
+        font-size: 10px;
+    }
     .logo img{
         height: 45px;
+    }
+    .botoes {
+        flex-direction: column;
+    }
+    .botoes > button {
+        padding: 8px;
+        width: 130px;
+        font-size: 13px;
+    }
+    .cont-multimeios {
+        width: 95%;
+    }
+    .box-multiomeios-left > p {
+        font-size: 22px;
     }
     .menu{
         width: 80vw;   
