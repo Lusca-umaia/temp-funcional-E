@@ -212,7 +212,7 @@ body {
     margin-bottom: 12px;
 }
 
-.linha {
+.linha-b {
     border-top: 0.4px solid #E9E9E9;
     width: 100%;
 }
@@ -490,7 +490,6 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .logo img {
         height: 45px;
     }
-
     .menu {
         width: 80vw;
     }
@@ -569,68 +568,3 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
 }
 
-/* Nav e humburger */
-/* @media (max-width: 750px) {
-    .conteudo-principal {
-        display: block;
-    }
-
-    .conteudo-qs-t {
-        font-size: 16px;
-    }
-
-    .conteudo-qs-s {
-        font-size: 16px;
-    }
-
-    .conteudo-pt {
-        font-size: 16px;
-    }
-
-    .conteudo-ps {
-        font-size: 16px;
-    }
-
-    .conteudo-flex-qd-texto-p {
-        font-size: 16px;
-    }
-
-    .conteudo-flex-qd-texto-s {
-        font-size: 16px
-    }
-
-    .conteudo-principal-escrito-botao {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 670px) {
-    .conteudo-qs {
-        margin-top: 140px;
-    }
-
-    .conteudo-flex {
-        margin-top: 150px;
-    }
-
-    .conteudo-secundario-escrito-t {
-        font-size: 16px;
-    }
-
-    .conteudo-principal-imagem {
-        width: 90%;
-    }
-
-    .conteudo-secundario-escrito {
-        margin-top: -1px;
-    }
-
-    .conteudo-img-flex {
-        margin-top: -20px;
-        margin-bottom: -20px;
-    }
-
-    .conteudo-qs {
-        margin-top: 50px;
-    }
-} */
