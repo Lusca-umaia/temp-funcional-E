@@ -9,7 +9,9 @@ function ativaMenu(){
 menuHamburguer.addEventListener('click', ativaMenu);
 
 
+const link = document.getElementsByClassName("conteudo-img-flex")
 
+conteudo-img-flex.addEventListener('click', transitionLink)
 
 
 
