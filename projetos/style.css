@@ -368,8 +368,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     .container-projetos .descricao p{
         font-size: 18px;
-        width: 100%;
-        
+        width: 100%;      
     }
     .container-projetos .reverse{
         flex-direction: column;

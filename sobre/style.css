@@ -205,7 +205,7 @@ section .container-propostas .propostas-conteudo .conteudo-descricao h1{
     font-family:'Montserrat Alternates', sans-serif ;
     font-size: 80px;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 90px;
     width: 60%;
 }
 section .container-propostas .propostas-conteudo .conteudo-descricao span{
@@ -520,10 +520,12 @@ footer .container-conteudo-footer .icones-redes img:hover{
     }
     section .container-propostas .propostas-conteudo .conteudo-descricao h1{
         font-size: 50px;
+        width: 100%;
+        line-height: 70px;
     }
     section .container-propostas .propostas-conteudo{
         gap: 80px;
-    }
+    }   
     section .container-propostas .propostas-conteudo .propostas{
         gap: 50px;
     }
@@ -638,7 +640,10 @@ footer .container-conteudo-footer .icones-redes img:hover{
     section .container-propostas .propostas-conteudo .conteudo-descricao h1{
         font-size: 35px;
         line-height: 50px;
-        text-align: justify;
+        text-align:center;
+    }
+    section .container-propostas .propostas-conteudo .conteudo-descricao img{
+        display: none;
     }
     section .container-propostas .propostas-conteudo{
         gap: 50px;

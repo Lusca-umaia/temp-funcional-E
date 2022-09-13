@@ -154,10 +154,7 @@ section{
     border-radius:25px;
     padding:90px 45px;  
     margin-top:80px;
-    margin-bottom: 200px;
-    -webkit-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
-    -moz-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
-    box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);  
+    margin-bottom: 200px; 
 }
 section .titulos{
     margin-bottom: 65px;
@@ -194,7 +191,7 @@ section .container-valores .coluna-valores h3 img{
     margin-bottom: 2px;
 }
 section .container-valores .coluna-valores .descricao-valores p{
-    font-size:20px;
+    font-size:18px;
     font-weight: 500;
     font-family:'Montserrat', sans-serif ;
     line-height: 35px;
@@ -218,7 +215,7 @@ section .container-valores .coluna-valores .descricao-valores p{
 }
 .container-opiniao .titulo-opiniao p{
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size:18px;
     font-weight: 500;
     line-height:28px;
 }
@@ -341,7 +338,7 @@ footer .container-redes-sociais a img:hover{
 .container-curso {
     width: 100%;
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -358,14 +355,17 @@ footer .container-redes-sociais a img:hover{
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
+    -moz-box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7);
+    box-shadow: 1px 3px 4px 1px rgba(148,148,148,0.7); 
 }
 .cursos-text > p {
-    font-family: Montserrat Alternates;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 37px;
     font-weight: 500;
 }
 .cursos-text > h3 {
-    font-family: Montserrat Alternates;
+    font-family: 'Montserrat Alternates',sans-serif;
     font-size: 72px;
     font-weight: 600;
 }
@@ -391,7 +391,7 @@ footer .container-redes-sociais a img:hover{
     height: 200px;
 }
 .box-curso {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 25px;
     font-size: 20px;
@@ -541,7 +541,7 @@ footer .container-redes-sociais a img:hover{
         height: 300px;
     }
     .box-curso > p {
-        font-size: 30px;
+        font-size: 20px;
     }
     .logo img{
         height:50px;
@@ -713,11 +713,14 @@ footer .container-redes-sociais a img:hover{
         gap: 30px;
     }
     .box-curso > img {
-        width: 70%;
+        width: 60%;
         height: 200px;
     }
     .cursos-text > h3 {
-        font-size: 55px;
+        font-size: 50px;
+    }
+    .cursos-text > p{
+        font-size: 30px;
     }
     .menu{
         width: 80vw;   
