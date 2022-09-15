@@ -449,8 +449,8 @@ footer .container-conteudo-footer .icones-redes img:hover{
         width: 90%;
     }
     section .container-gestao-2022{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
         row-gap: 100px;
     }
     section .container-gestao-2022 .pessoas-gestao{

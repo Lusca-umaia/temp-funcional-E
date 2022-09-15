@@ -82,9 +82,19 @@ font-family: 'Montserrat Alternates', sans-serif;
     margin: 0 auto;
     margin-top: 75px;
     width: 1100px; 
-    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
-
+.container-cine-descricao .container-img-vetorCine{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.container-cine-descricao .container-img-vetorCine img{
+    width: 80%;
+    align-self: flex-start;
+}
 .container-cine-descricao .descricao{
     display: flex;
     flex-direction: column;

@@ -235,10 +235,10 @@ section .container-propostas .propostas-conteudo .propostas .linha-propostas .pr
 section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
     font-size: 23px;
     font-weight: 600;
-    border-bottom: 3px solid #06B45F;
+    border-bottom: 3px solid #35AB7B;
 }
 section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto .laranja{
-    border-bottom: 3px solid #FFAF10;
+    border-bottom: 3px solid #F65E08;
 }
 section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto p{
     font-weight: 500;
@@ -277,7 +277,7 @@ section .container-apresentacao-gestao .container-conteudo-gestao .container .co
     width: 50%
 }
 section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao img{
-    width: 100%;
+    width: 80%;
 }
 section .container-apresentacao-gestao .container-conteudo-gestao .container  .fala-gestora{
     width: 50%;
@@ -288,7 +288,7 @@ section .container-apresentacao-gestao .container-conteudo-gestao .container  .f
 }
 section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora p{
     font-size: 18px;
-    line-height: 60px;
+    line-height: 50px;
     font-weight: 500;
 }
 section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora h6{
@@ -526,6 +526,13 @@ footer .container-conteudo-footer .icones-redes img:hover{
     section .container-propostas .propostas-conteudo{
         gap: 80px;
     }   
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas{
+        flex-direction: column;
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao{
+        width: 70%;
+    }
     section .container-propostas .propostas-conteudo .propostas{
         gap: 50px;
     }
@@ -656,7 +663,7 @@ footer .container-conteudo-footer .icones-redes img:hover{
         gap: 50px;
     }
     section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao{
-        width: max-content;
+        width: 80%;
     }
     section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
         font-size: 18px;
