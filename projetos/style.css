@@ -432,6 +432,9 @@ footer .container-conteudo-footer .icones-redes img:hover{
     .menu{
         width: 80vw;   
     }
+    .container-comecar {
+        padding: 8px;
+    }
     .menu .container-menu .item-menu{
         padding: 1rem;
         font-size:18px;     
