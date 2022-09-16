@@ -287,6 +287,11 @@ footer .descricao-footer{
 footer .descricao-footer img{
     align-items: flex-start;
 }
+footer .descricao-footer .container-paginas{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
 footer .descricao-footer .paginas{
     margin: 0 auto;
     display:flex;
@@ -319,43 +324,6 @@ footer .descricao-footer p{
     font-weight:700;
     color: #656565;
     text-transform: uppercase;
-}
-footer p{
-    font-size: 14px;
-}
-footer form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-footer form .btn-enviar{
-    width: 30%;
-    padding:5px 10px;
-    border: 0;
-    cursor: pointer;
-    border-radius:9px;
-    background-color: #ffff;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif; 
-    margin-bottom: 20px;
-}
-footer form .btn-enviar:hover{
-    opacity: 0.9;
-}
-footer form .email{
-    border: 0;
-    outline: none;
-    padding:10px 10px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius:11px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif; 
-}
-footer form .email::placeholder{
-    font-size: 16px;
 }
 footer .container-redes-sociais{
     display: flex;
@@ -601,7 +569,7 @@ footer .container-redes-sociais p{
         top:72px;
         right: 0;
         width: 60vw;
-        background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%);
         z-index: 9999;
         animation: slide 0.5s ease-in-out;
     }
@@ -705,6 +673,59 @@ footer .container-redes-sociais p{
      .eventos .semana-box .semana-secion img{
          width: 100%;
      }
+     .footer-container{
+        display: flex;
+        justify-content: space-between;
+        border-radius:20px;
+        width: 100%;
+        margin:0 auto;
+        padding-top:40px;
+    }
+    footer h3{
+        font-size:25px;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600;
+        
+    }
+    footer .descricao-footer .container-paginas{
+        width: 100%;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    footer .descricao-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding-bottom: 20px;
+        height: 100%
+    }
+    footer .descricao-footer .logo-descricao img{
+        display: none;
+    }
+    footer .descricao-footer .paginas{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-left: 0;
+        width: 50%;
+    }
+    footer .descricao-footer .paginas a{
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight:700;
+        color: #656565;
+    }
+    footer .descricao-footer .icones{
+        display: flex;
+        gap: 20px;
+    }
+    footer .descricao-footer .icones img{
+        height: 25px;
+    }
      footer h3{
          font-size:20px;
      }
@@ -833,34 +854,26 @@ footer .container-redes-sociais p{
     .eventos h3{
         font-size: 18px;
     }
-    footer .descricao-footer h3{
-        font-size: 22px;
+    footer .descricao-footer .container-paginas{
+        flex-direction: column;
+        
+    }
+    footer .descricao-footer .paginas{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    footer .descricao-footer .paginas h3{
+        font-size: 16px;
     }
     footer .descricao-footer p{
-        font-size: 16px;
-       
-    }
-    footer form .email{
-        padding:12px 10px ;
-        font-size: 10px;
-        border-radius:8px;
         font-size: 14px;
     }
-    footer form .email::placeholder{
+    footer .descricao-footer a{
         font-size: 14px;
-    }
-    footer form{
-        gap: 15px;
-    }
-    footer form .btn-enviar{
-        font-size: 14px;
-        border-radius: 7px;
     }
     footer .container-redes-sociais p{
         color:#444343;
-    }
-    footer .container-redes-sociais a img{
-        width: 30px;
     }
 }
 
