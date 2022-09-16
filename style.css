@@ -260,9 +260,16 @@ section .container-valores .coluna-valores .descricao-valores p{
     width: 100%;
     margin-bottom:15px;
 }
+
+.footer-border{
+    background: #35AB7B;
+    width: 100%;
+}
+
 footer{
-    background-color:#35AB7B;
-    margin-top:100px; 
+    margin-top:100px;
+    background: #35AB7B;
+
 }
 .footer-container{
     display: flex;
@@ -271,6 +278,74 @@ footer{
     width: 1100px;
     margin:0 auto;
     padding-top:40px;
+}
+footer h3{
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    
+}
+footer .descricao-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+}
+footer .descricao-footer img{
+    align-items: flex-start;
+}
+footer .descricao-footer .container-paginas{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+footer .descricao-footer .paginas{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding-left: 10px;
+    border-left: 1px solid #000000;
+}
+footer .descricao-footer .paginas a{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight:700;
+    color: #656565;
+}
+footer .descricao-footer .icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer .descricao-footer .icones img{
+    height: 25px;
+}
+footer .descricao-footer .icones img:hover{
+    transition:0.5s;
+    transform: translateX(0) scale(1.2);
+}
+footer .descricao-footer p{
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight:700;
+    color: #656565;
+    text-transform: uppercase;
+}
+footer .container-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: #407761;
+}
+footer .container-redes-sociais p{
+    color:#1d1b1b;
+    font-family: 'Montserrat', sans-serif;
 }
 .box-dire-footer {
     display: flex;
@@ -285,14 +360,6 @@ footer{
     font-weight: bold;
     text-align: justify;
     text-transform: uppercase;
-}
-.icones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 120px;
 }
 
 #botao-footer {
