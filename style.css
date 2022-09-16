@@ -16,8 +16,11 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 body{
     background-color:#FAFAFA;
-}
 
+}
+html{
+    scroll-behavior: smooth;
+}
 .header-container{
     background: radial-gradient(70.73% 85.38% at 30.49% 34.8%, #B7FF96 0%, #35AB7B 100%);
     display:flex;
@@ -188,7 +191,7 @@ section .container-valores .coluna-valores h3{
 }
 section .container-valores .coluna-valores h3 img{
     width:30px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 section .container-valores .coluna-valores .descricao-valores p{
     font-size:18px;
@@ -270,14 +273,52 @@ footer{
     padding-top:40px;
 }
 footer h3{
-    font-size:30px;
+    font-size:25px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
+    
 }
-footer .descricao-footer p,footer p{
-    font-size:20px;
+footer .descricao-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+}
+footer .descricao-footer img{
+    align-items: flex-start;
+}
+footer .descricao-footer .paginas{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding-left: 10px;
+    border-left: 1px solid #000000;
+}
+footer .descricao-footer .paginas a{
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif; 
-    font-weight: 400;
+    font-weight:700;
+    color: #656565;
+}
+footer .descricao-footer .icones{
+    display: flex;
+    gap: 20px;
+}
+footer .descricao-footer .icones img{
+    height: 25px;
+}
+footer .descricao-footer .icones img:hover{
+    transition:0.5s;
+    transform: translateX(0) scale(1.2);
+}
+footer .descricao-footer p{
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight:700;
+    color: #656565;
+    text-transform: uppercase;
 }
 footer p{
     font-size: 14px;
@@ -322,19 +363,14 @@ footer .container-redes-sociais{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding: 10px 0;
+    background-color: #407761;
 }
 footer .container-redes-sociais p{
     color:#1d1b1b;
+    font-family: 'Montserrat', sans-serif;
 }
-footer .container-redes-sociais a img{
-    height: 25px;
-    margin-left: 10px;
-}
-footer .container-redes-sociais a img:hover{
-    transition:0.5s;
-    transform: translateX(0) scale(1.2);
-}
+
 .container-curso {
     width: 100%;
     display: flex;
